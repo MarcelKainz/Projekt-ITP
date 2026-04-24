@@ -35,6 +35,9 @@
   },
   "name":"Spell Smoke",
   "resources":[
+    {"id":{"name":"obj_Kainz","path":"objects/obj_Kainz/obj_Kainz.yy",},},
+    {"id":{"name":"obj_Lukas","path":"objects/obj_Lukas/obj_Lukas.yy",},},
+    {"id":{"name":"obj_Marvin","path":"objects/obj_Marvin/obj_Marvin.yy",},},
     {"id":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},},
     {"id":{"name":"obj_ParentCollision","path":"objects/obj_ParentCollision/obj_ParentCollision.yy",},},
     {"id":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},},
