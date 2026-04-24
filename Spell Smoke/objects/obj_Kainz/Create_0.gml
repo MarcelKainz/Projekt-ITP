@@ -3,4 +3,8 @@
 
 var Marcel = true;
 
+<<<<<<< HEAD
 //Kommentar
+=======
+//Lukas War hier
+>>>>>>> Thaler---Test
