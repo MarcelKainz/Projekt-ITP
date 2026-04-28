@@ -36,9 +36,9 @@
   "name":"Spell Smoke",
   "resources":[
     {"id":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},},
-    {"id":{"name":"obj_ParentCollision","path":"objects/obj_ParentCollision/obj_ParentCollision.yy",},},
     {"id":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},},
     {"id":{"name":"obj_ParentItem","path":"objects/obj_ParentItem/obj_ParentItem.yy",},},
+    {"id":{"name":"obj_ParentSolid","path":"objects/obj_ParentSolid/obj_ParentSolid.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
