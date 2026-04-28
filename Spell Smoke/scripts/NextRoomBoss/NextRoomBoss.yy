@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"NextRoomBoss",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NextRoomBoss",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
