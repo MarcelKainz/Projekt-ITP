@@ -58,6 +58,7 @@
     {"id":{"name":"NextRoomDefault","path":"scripts/NextRoomDefault/NextRoomDefault.yy",},},
     {"id":{"name":"RoomLogic","path":"scripts/RoomLogic/RoomLogic.yy",},},
     {"id":{"name":"spr_Door","path":"sprites/spr_Door/spr_Door.yy",},},
+    {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},},
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},},
   ],
   "resourceType":"GMProject",
