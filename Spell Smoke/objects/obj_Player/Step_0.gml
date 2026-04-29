@@ -2,7 +2,8 @@
 
 	var maxi = keyboard_check(vk_shift) ? maxSpeed * 1.5 : maxSpeed;
 	var acci = keyboard_check(vk_shift) ? accel * 1.5 : accel;
- //ONLY modifying maxSpeed DOES NOT WORK for walking diagnoally. We don't know why, it just doesn't. ALWAYS buff maxSpeed AND accel
+ //ONLY modifying maxSpeed DOES NOT WORK for walking diagnoally, idk why
+ //ALWAYS buff maxSpeed AND accel
 	var xMove = (keyboard_check(ord("D")) - keyboard_check(ord("A")));
 	var yMove = (keyboard_check(ord("S")) - keyboard_check(ord("W")));
 
@@ -24,7 +25,7 @@
 	move_and_collide(xSpeed, ySpeed, obj_ParentSolid);
 	
 #endregion Movement
-/*#region Sprites
+#region Sprites
 if (xMove < 0)
 	directionLooking = "left";
 else if (xMove > 0)
@@ -36,4 +37,4 @@ else if (yMove > 0)
 	
 var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
 sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
-#endregion Sprites*/
+#endregion Sprites

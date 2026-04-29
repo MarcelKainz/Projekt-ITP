@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_DebugSolid",
+    "path":"sprites/spr_DebugSolid/spr_DebugSolid.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
