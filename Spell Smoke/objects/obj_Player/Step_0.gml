@@ -38,8 +38,3 @@ else if (yMove > 0)
 var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
 sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 #endregion Sprites
-#region Shoot
-
-	x.
-
-#endregion
