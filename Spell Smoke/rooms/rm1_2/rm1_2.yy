@@ -18,8 +18,8 @@
   ],
   "name":"rm1_2",
   "parent":{
-    "name":"Normal (1)",
-    "path":"folders/Rooms/Normal (1).yy",
+    "name":"1 Normal",
+    "path":"folders/Rooms/1 Normal.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -36,7 +36,9 @@ else if (yMove > 0)
 	directionLooking = "down";
 	
 var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
-sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
+//sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
+var zwischenspeicher = asset_get_index("spr_Player_" + moving + directionLooking);
+sprite_index = zwischenspeicher;
 #endregion Sprites
 #region Shoot
 
@@ -47,4 +49,9 @@ sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 	}
 	cooldown = cooldown - 1;
 
+#endregion
+#region Camera
+
+	camera_set_view_pos(view_camera[0], x - (camera_get_view_width(view_camera[0]) / 2), y  - (camera_get_view_height(view_camera[0]) / 2));
+	
 #endregion
