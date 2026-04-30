@@ -23,7 +23,7 @@
   ],
   "name":"spr_Player_idle_up",
   "nineSlice":null,
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"player",
     "path":"folders/Sprites/player.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":7,
     "yorigin":18,
   },
   "swatchColours":null,

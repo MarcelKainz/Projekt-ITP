@@ -63,6 +63,7 @@
     {"id":{"name":"rm3_1","path":"rooms/rm3_1/rm3_1.yy",},},
     {"id":{"name":"rm3_2","path":"rooms/rm3_2/rm3_2.yy",},},
     {"id":{"name":"rmboss_1","path":"rooms/rmboss_1/rmboss_1.yy",},},
+    {"id":{"name":"GameEnding","path":"scripts/GameEnding/GameEnding.yy",},},
     {"id":{"name":"NextRoomBoss","path":"scripts/NextRoomBoss/NextRoomBoss.yy",},},
     {"id":{"name":"NextRoomDefault","path":"scripts/NextRoomDefault/NextRoomDefault.yy",},},
     {"id":{"name":"RoomLogic","path":"scripts/RoomLogic/RoomLogic.yy",},},
