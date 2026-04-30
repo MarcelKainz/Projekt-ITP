@@ -7,3 +7,6 @@ ySpeed = 0;
 maxSpeed = 1.5;
 accel = 1;
 directionLooking = "down";
+
+allroom = [];
+allroom = 
