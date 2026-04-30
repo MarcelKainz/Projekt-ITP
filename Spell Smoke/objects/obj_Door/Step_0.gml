@@ -1,3 +1,3 @@
-keyboard_check(ord("A")){
+if(keyboard_check_pressed(ord("T"))){
 	RoomLogic();
 }
