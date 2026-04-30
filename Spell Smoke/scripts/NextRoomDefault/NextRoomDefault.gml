@@ -4,9 +4,26 @@ function NextRoomDefault(){
 	var roomName = "rm" + string(roomType) + "_" + string(roomNr);
 	var roomID = asset_get_index(roomName);
 	
-	show_debug_message(roomName);
-	show_debug_message(roomID);
+	if (!array_contains(obj_Player.roomsBeenTo, roomName))
+		{
+			room_goto(roomID);
+			obj_Player.roomsPassed++;
+			if (obj_Player.roomsPassed > 3)
+		{
+			array_shift(obj_Player.roomsBeenTo)
+		}
+
+		array_push(obj_Player.roomsBeenTo, roomName)
 	
-	room_goto(roomID);
-	obj_Player.roomsPassed++;
+
+		show_debug_message(roomName);
+		show_debug_message(roomID);
+		show_debug_message(obj_Player.roomsBeenTo)
+		show_debug_message(obj_Player.allrooms)
+
+	}
+	else
+	{
+		NextRoomDefault();
+	}
 }

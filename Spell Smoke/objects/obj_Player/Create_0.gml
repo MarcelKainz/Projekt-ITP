@@ -4,6 +4,7 @@ roomsPassed = 0;
 roomsBeenTo = [];
 allrooms = [];
 
+
 xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
