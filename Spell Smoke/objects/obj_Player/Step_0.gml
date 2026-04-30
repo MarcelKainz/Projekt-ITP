@@ -36,8 +36,10 @@ else if (yMove > 0)
 	directionLooking = "down";
 	
 var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
-sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
-show_debug_message(sprite_index)
+//sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
+var zwischenspeicher = asset_get_index("spr_Player_" + moving + directionLooking);
+sprite_index = zwischenspeicher;
+show_debug_message(asset_get_index("spr_Player_" + moving + directionLooking))
 #endregion Sprites
 #region Shoot
 
