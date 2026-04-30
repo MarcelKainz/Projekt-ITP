@@ -40,6 +40,11 @@ sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 #endregion Sprites
 #region Shoot
 
-	x.
+	if (mouse_check_button(mb_left)) && (cooldown < 1)
+	{
+		instance_create_layer(x, y, layer, obj_PlayerBullet);
+		cooldown = 30;
+	}
+	cooldown = cooldown - 1;
 
 #endregion
