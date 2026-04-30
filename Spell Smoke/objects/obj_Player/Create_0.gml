@@ -1,4 +1,4 @@
-
+gml_pragma("MarkTagAsUsed", "playerSpr");
 roomsToBoss = 10;
 roomsPassed = 0;
 roomsBeenTo = [];
