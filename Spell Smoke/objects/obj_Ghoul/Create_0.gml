@@ -8,10 +8,10 @@ function GetHit(damage, type) {
 }
 
 function Idle() {
-	show_message_async("Idling");
+	
 }
 function Attack() {
-	show_message_async("Attack");
+	
 }
 function Flee() {
 	//...
