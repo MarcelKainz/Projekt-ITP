@@ -44,6 +44,7 @@
   "name":"Spell Smoke",
   "resources":[
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
+    {"id":{"name":"obj_EPress","path":"objects/obj_EPress/obj_EPress.yy",},},
     {"id":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},},
     {"id":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},},
     {"id":{"name":"obj_ParentItem","path":"objects/obj_ParentItem/obj_ParentItem.yy",},},
@@ -68,6 +69,7 @@
     {"id":{"name":"spr_bulletBall","path":"sprites/spr_bulletBall/spr_bulletBall.yy",},},
     {"id":{"name":"spr_DebugSolid","path":"sprites/spr_DebugSolid/spr_DebugSolid.yy",},},
     {"id":{"name":"spr_Door","path":"sprites/spr_Door/spr_Door.yy",},},
+    {"id":{"name":"spr_EPress","path":"sprites/spr_EPress/spr_EPress.yy",},},
     {"id":{"name":"spr_Player_idle_down","path":"sprites/spr_Player_idle_down/spr_Player_idle_down.yy",},},
     {"id":{"name":"spr_Player_idle_left","path":"sprites/spr_Player_idle_left/spr_Player_idle_left.yy",},},
     {"id":{"name":"spr_Player_idle_right","path":"sprites/spr_Player_idle_right/spr_Player_idle_right.yy",},},
