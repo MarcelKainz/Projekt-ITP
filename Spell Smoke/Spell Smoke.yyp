@@ -86,8 +86,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_clioTEST","path":"rooms/rm_clioTEST/rm_clioTEST.yy",},},
     {"roomId":{"name":"rm_TEST","path":"rooms/rm_TEST/rm_TEST.yy",},},
+    {"roomId":{"name":"rm_clioTEST","path":"rooms/rm_clioTEST/rm_clioTEST.yy",},},
     {"roomId":{"name":"EntryRoom","path":"rooms/EntryRoom/EntryRoom.yy",},},
     {"roomId":{"name":"rm4_1","path":"rooms/rm4_1/rm4_1.yy",},},
     {"roomId":{"name":"rm4_2","path":"rooms/rm4_2/rm4_2.yy",},},
