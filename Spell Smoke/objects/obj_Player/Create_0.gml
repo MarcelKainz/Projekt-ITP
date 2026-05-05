@@ -36,3 +36,5 @@ function GetHit(damage, type) {
 		GameLose();
 	}
 }
+
+window_set_fullscreen(true)

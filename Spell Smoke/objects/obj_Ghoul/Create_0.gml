@@ -16,7 +16,7 @@ function Attack() {
 	x += player.x < x ? -1 : 1;
 	y += player.y < y ? -1 : 1;
 	
-	if (place_meeting(x, y, player)
+	if (place_meeting(x, y, player))
 		player.GetHit(damage, dmgType);
 }
 function Flee() {
