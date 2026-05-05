@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_Ghoul1",
+  "%Name":"spr_Ghoul_walk_down",
   "bboxMode":2,
   "bbox_bottom":28,
   "bbox_left":10,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b1af2527-7fac-41af-9075-998b4fe4da58","blendMode":0,"displayName":"default","isLocked":false,"name":"b1af2527-7fac-41af-9075-998b4fe4da58","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_Ghoul1",
+  "name":"spr_Ghoul_walk_down",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemies",
-    "path":"folders/Sprites/enemies.yy",
+    "name":"ghoul",
+    "path":"folders/Sprites/enemies/ghoul.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_Ghoul1",
+    "%Name":"spr_Ghoul_walk_down",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_Ghoul1",
+    "name":"spr_Ghoul_walk_down",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"880ab6f8-49bf-4650-96f7-dc17bc34a109","path":"sprites/spr_Ghoul1/spr_Ghoul1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"880ab6f8-49bf-4650-96f7-dc17bc34a109","path":"sprites/spr_Ghoul_walk_down/spr_Ghoul_walk_down.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f47b8dcd-69a2-48e8-8c70-4bbbff337288","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

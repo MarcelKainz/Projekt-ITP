@@ -26,7 +26,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_DebugSolid",
     "path":"sprites/spr_DebugSolid/spr_DebugSolid.yy",
