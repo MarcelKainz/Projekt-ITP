@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_Ghoul",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_Ghoul",
   "overriddenProperties":[],
   "parent":{
-    "name":"clioShite",
-    "path":"folders/Objects/clioShite.yy",
+    "name":"enemies",
+    "path":"folders/Objects/enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_ParentEnemy",
@@ -29,18 +26,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"damage","filters":[],"listItems":[],"multiselect":false,"name":"damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"dmgType","filters":[],"listItems":[
-        "\"bludgeoning\"",
-      ],"multiselect":false,"name":"dmgType","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"bludgeoning\"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ghoul1",
-    "path":"sprites/spr_Ghoul1/spr_Ghoul1.yy",
+    "name":"spr_Ghoul",
+    "path":"sprites/spr_Ghoul/spr_Ghoul.yy",
   },
   "spriteMaskId":null,
   "visible":true,
