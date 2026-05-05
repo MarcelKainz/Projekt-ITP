@@ -9,14 +9,16 @@ function GetHit(damage, type) {
 }
 
 function Idle() {
-	if (point_distance(x, y, player.x, player.y) < 200)
-		behaviour = Attack;
+	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
+		behaviour = Attack;//than attack
 }
 function Attack() {
-	x += player.x < x ? -1 : 1;
-	y += player.y < y ? -1 : 1;
+	//move toward Player, don't care about Walls
+	/*x += player.x < x ? -1 : 1; 
+	y += player.y < y ? -1 : 1;*/
+	mp_potential_step(player.x, player.y, moveSpeed, false) //move toward Player, dodge solids
 	
-	if (place_meeting(x, y, player)
+	if (place_meeting(x, y, player) && player.hitcooldown == 0)
 		player.GetHit(damage, dmgType);
 }
 function Flee() {
