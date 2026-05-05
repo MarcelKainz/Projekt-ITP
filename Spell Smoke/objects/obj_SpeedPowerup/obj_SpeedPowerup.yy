@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EPress",
+  "%Name":"obj_SpeedPowerup",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_EPress",
+  "name":"obj_SpeedPowerup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Powerups",
+    "path":"folders/Objects/Powerups.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentPowerup",
+    "path":"objects/obj_ParentPowerup/obj_ParentPowerup.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_EPress",
-    "path":"sprites/spr_EPress/spr_EPress.yy",
+    "name":"spr_bulletBall",
+    "path":"sprites/spr_bulletBall/spr_bulletBall.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,6 +1,6 @@
 function NextRoomDefault(){
 
-	//nachsehen ob ein shop generieren darf
+	//nachsehen ob ein shop generiert werden darf
 	if (!array_contains(obj_Player.roomsBeenTo, "rm3_1"))
 	{
 		var shopAllowed = true;	
@@ -40,7 +40,8 @@ function NextRoomDefault(){
 	var roomID = asset_get_index(roomName);
 	
 
-	
+	show_debug_message(roomName)
+	show_debug_message(obj_Player.roomsBeenTo)
 	
 	
 	// räume die nicht gerade erst waren laden
