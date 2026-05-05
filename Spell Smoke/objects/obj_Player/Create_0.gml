@@ -13,13 +13,26 @@ for (var ix = 1; ix <= room_last; ix ++)
 }
 
 
+hp = 10;
 xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
 accel = 1;
 directionLooking = "down";
+hitcooldown = 0;
 
 
 
 
 cooldown = 30;
+
+
+function GetHit(damage, type) {
+	hp -= damage;
+	
+	hitcooldown = 25;
+	
+	if(hp <= 0){
+		GameLose();
+	}
+}

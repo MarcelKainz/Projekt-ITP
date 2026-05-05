@@ -1,4 +1,4 @@
-behaviour = "Idle"; //states: Idle | Attack | Flee | Special
+behaviour = Idle; //states: Idle | Attack | Flee | Special
 
 function GetHit(damage, type) {
 	hp -= damage;

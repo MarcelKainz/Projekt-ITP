@@ -53,3 +53,20 @@ sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 	camera_set_view_pos(view_camera[0], x - (camera_get_view_width(view_camera[0]) / 2), y  - (camera_get_view_height(view_camera[0]) / 2));
 	
 #endregion
+#region Hit
+	var bulletHit = instance_place(x, y, obj_ParentBullet);
+
+	if (bulletHit != noone)
+		if(bulletHit.hitPlayer)
+			if(hitcooldown == 0)
+				GetHit(bulletHit.damage, bulletHit.dmgType);
+		
+	show_debug_message(hp);
+	
+	if(hitcooldown > 0)
+		hitcooldown -=1;
+	
+		
+
+	
+#endregion
