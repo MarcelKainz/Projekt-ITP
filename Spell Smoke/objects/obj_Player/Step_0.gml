@@ -61,7 +61,7 @@ sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 			if(hitcooldown == 0)
 				GetHit(bulletHit.damage, bulletHit.dmgType);
 		
-	show_debug_message(hp);
+
 	
 	if(hitcooldown > 0)
 		hitcooldown -=1;
