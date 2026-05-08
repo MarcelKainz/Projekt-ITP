@@ -1,7 +1,33 @@
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-roomsToBoss = 999;
+endlessMode = false;
+difficulty = "hard";
+
+if (endlessMode)
+{
+    roomsToBoss = 999;
+}
+else
+{
+    switch (difficulty)
+    {
+        case "easy":
+            roomsToBoss = 10;
+        break;
+
+        case "middle":
+            roomsToBoss = 7;
+        break;
+
+        case "hard":
+            roomsToBoss = 5;
+        break;
+
+        default:
+            roomsToBoss = 10;
+    }
+}
 roomsPassed = 0;
 roomsBeenTo = [];
 allrooms = [];
@@ -9,7 +35,7 @@ allrooms = [];
 for (var ix = 1; ix <= room_last; ix ++)
 {
     if room_exists(ix)
-{
+	{
         array_push(allrooms, room_get_name(ix));
     }
 }
