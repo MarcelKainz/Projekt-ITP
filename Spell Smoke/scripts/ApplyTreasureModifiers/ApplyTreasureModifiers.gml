@@ -4,6 +4,7 @@ function ApplyTreasureModifiers(treasure){
 		{
 			obj_ParentItem.statToIncrease = "maxSpeed";
 			obj_ParentItem.increaseModifier = 1;
+			obj_ParentItem.sprite_index = spr_TreasureSpeed;
 		}
 		
 		
@@ -11,6 +12,7 @@ function ApplyTreasureModifiers(treasure){
 		{
 			obj_ParentItem.statToIncrease = "damageMultiplier";
 			obj_ParentItem.increaseModifier = 1;
+			obj_ParentItem.sprite_index = spr_TreasurePower;
 		}
 		
 		
@@ -18,6 +20,7 @@ function ApplyTreasureModifiers(treasure){
 		{
 			obj_ParentItem.statToIncrease = "hp";
 			obj_ParentItem.increaseModifier = 2;
+			obj_ParentItem.sprite_index = spr_TreasureHealth;
 		}
 	
 }
