@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Ghoul",
+  "%Name":"obj_Enemy_Wraith",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Ghoul",
+  "name":"obj_Enemy_Wraith",
   "overriddenProperties":[],
   "parent":{
     "name":"clioShite",
@@ -29,18 +29,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"damage","filters":[],"listItems":[],"multiselect":false,"name":"damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"dmgType","filters":[],"listItems":[
-        "\"bludgeoning\"",
-      ],"multiselect":false,"name":"dmgType","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"bludgeoning\"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ghoul_walk_down",
-    "path":"sprites/spr_Ghoul_walk_down/spr_Ghoul_walk_down.yy",
+    "name":"spr_Wraith_idle_down",
+    "path":"sprites/spr_Wraith_idle_down/spr_Wraith_idle_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

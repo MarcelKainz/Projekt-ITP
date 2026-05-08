@@ -5,5 +5,4 @@ if (iFrames <= 0) {
 		if (bulletHit.hitEnemy)
 			GetHit(bulletHit.damage, bulletHit.dmgType);
 } else iFrames--;
-	
 behaviour();
