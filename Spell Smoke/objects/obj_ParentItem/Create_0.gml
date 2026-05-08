@@ -1,0 +1,2 @@
+statToIncrease = "";
+increaseModifier = 0;
