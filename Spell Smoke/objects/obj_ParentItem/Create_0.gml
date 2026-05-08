@@ -1,2 +1,2 @@
-statToIncrease = "";
-increaseModifier = 0;
+var statToIncrease;
+var increaseModifier;
