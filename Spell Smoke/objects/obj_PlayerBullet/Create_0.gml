@@ -5,4 +5,7 @@
 	direction = direction + random_range(-4, 4);
 	speed = 16;
 	image_angle = direction;
-#endregion
+	
+	
+		
+#endregion shoot
