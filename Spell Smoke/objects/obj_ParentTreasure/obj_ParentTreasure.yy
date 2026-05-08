@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ParentItem",
+  "%Name":"obj_ParentTreasure",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ParentItem",
+  "name":"obj_ParentTreasure",
   "overriddenProperties":[],
   "parent":{
     "name":"Treasure",
     "path":"folders/Objects/Treasure.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentSolid",
+    "path":"objects/obj_ParentSolid/obj_ParentSolid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Chest",
+    "path":"sprites/spr_Chest/spr_Chest.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

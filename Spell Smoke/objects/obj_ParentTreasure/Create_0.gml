@@ -1,0 +1,1 @@
+TreasurePool = ["Speed", "Power", "Health"];
