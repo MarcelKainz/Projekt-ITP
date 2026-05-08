@@ -1,7 +1,7 @@
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-roomsToBoss = 10;
+roomsToBoss = 999;
 roomsPassed = 0;
 roomsBeenTo = [];
 allrooms = [];
@@ -20,7 +20,7 @@ xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
 accel = 1;
-sprintMultiplier = 5;
+sprintMultiplier = 1.5;
 directionLooking = "down";
 hitcooldown = 0;
 
