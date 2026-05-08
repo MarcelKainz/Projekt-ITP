@@ -1,7 +1,7 @@
 #region Movement
 
-	var maxi = keyboard_check(vk_shift) ? maxSpeed * 1.5 : maxSpeed;
-	var acci = keyboard_check(vk_shift) ? accel * 1.5 : accel;
+	var maxi = keyboard_check(vk_shift) ? maxSpeed * sprintMultiplier : maxSpeed;
+	var acci = keyboard_check(vk_shift) ? accel * sprintMultiplier : accel;
  //ONLY modifying maxSpeed DOES NOT WORK for walking diagnoally, idk why
  //ALWAYS buff maxSpeed AND accel
 	var xMove = (keyboard_check(ord("D")) - keyboard_check(ord("A")));
@@ -22,7 +22,7 @@
 		xSpeed *= 0.707;
 	}
 
-	move_and_collide(xSpeed, ySpeed, obj_ParentSolid);
+	move_and_collide(xSpeed/1.5, ySpeed/1.5, obj_ParentSolid);
 	
 #endregion Movement
 #region Sprites
@@ -64,8 +64,6 @@ sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 		
 
 	
-	if(hitcooldown > 0)
-		hitcooldown -=1;
 	
 		
 
