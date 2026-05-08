@@ -11,7 +11,10 @@
     "name":"kainzbullets",
     "path":"folders/Objects/kainzbullets.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentBullet",
+    "path":"objects/obj_ParentBullet/obj_ParentBullet.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

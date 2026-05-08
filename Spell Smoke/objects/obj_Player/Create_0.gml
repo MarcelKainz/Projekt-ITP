@@ -23,6 +23,8 @@ accel = 1;
 directionLooking = "down";
 hitcooldown = 0;
 
+damageMultiplier = 1;
+
 
 
 
