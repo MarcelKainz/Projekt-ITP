@@ -1,7 +1,7 @@
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-endlessMode = false;
+endlessMode = true;
 difficulty = "easy";
 
 if (endlessMode)
@@ -72,6 +72,6 @@ function GetHit(damage, type) {
 //	}
 }
 
-window_set_fullscreen(true)
+window_set_fullscreen(false)
 
 debug = true;
