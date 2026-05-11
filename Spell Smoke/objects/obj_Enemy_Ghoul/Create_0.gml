@@ -10,7 +10,7 @@ function GetHit(damage, type) {
 
 function Idle() {
 	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
-		behaviour = Attack;//than attack
+		behaviour = Attack;//than attack // then du hs. LG Kainz und Lukas
 }
 function Attack() {
 	//move toward Player, don't care about Walls
