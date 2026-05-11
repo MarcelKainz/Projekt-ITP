@@ -91,6 +91,7 @@
     {"id":{"name":"spr_Player_walk_right","path":"sprites/spr_Player_walk_right/spr_Player_walk_right.yy",},},
     {"id":{"name":"spr_Player_walk_up","path":"sprites/spr_Player_walk_up/spr_Player_walk_up.yy",},},
     {"id":{"name":"spr_Tileset1","path":"sprites/spr_Tileset1/spr_Tileset1.yy",},},
+    {"id":{"name":"spr_TreasureHeal","path":"sprites/spr_TreasureHeal/spr_TreasureHeal.yy",},},
     {"id":{"name":"spr_TreasureHealth","path":"sprites/spr_TreasureHealth/spr_TreasureHealth.yy",},},
     {"id":{"name":"spr_TreasurePower","path":"sprites/spr_TreasurePower/spr_TreasurePower.yy",},},
     {"id":{"name":"spr_TreasureSpeed","path":"sprites/spr_TreasureSpeed/spr_TreasureSpeed.yy",},},

@@ -2,30 +2,30 @@ randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
 endlessMode = false;
-difficulty = "hard";
+difficulty = "easy";
 
 if (endlessMode)
 {
-    roomsToBoss = 999;
+    roomsToBoss = infinity;
 }
 else
 {
     switch (difficulty)
     {
         case "easy":
-            roomsToBoss = 10;
+            roomsToBoss = 20;
         break;
 
         case "middle":
-            roomsToBoss = 7;
+            roomsToBoss = 15;
         break;
 
         case "hard":
-            roomsToBoss = 5;
+            roomsToBoss = 10;
         break;
 
         default:
-            roomsToBoss = 10;
+            roomsToBoss = 20;
     }
 }
 roomsPassed = 0;
@@ -42,6 +42,7 @@ for (var ix = 1; ix <= room_last; ix ++)
 
 
 hp = 10;
+max_hp = 10;
 xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
@@ -59,13 +60,18 @@ cooldown = 30;
 
 
 function GetHit(damage, type) {
-	hp -= damage;
+//	if(bulletHit.dmgType == "enemy"){ //oder so ka wie das geht, macht Marvin glaub oder so, besserer Code noch hinzufügen; nur zum testen
+		hp -= damage;
 	
-	hitcooldown = 25;
+		hitcooldown = 25;
 	
-	if(hp <= 0){
-		GameLose();
-	}
+		if(hp <= 0)
+		{
+			GameLose();
+		}
+//	}
 }
 
-window_set_fullscreen(true)
+window_set_fullscreen(false)
+
+debug = true;
