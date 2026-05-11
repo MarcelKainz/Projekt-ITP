@@ -166,4 +166,15 @@ if(debug == true)
 	var door_center_x = obj_Door.x + obj_Door.sprite_width * 0.5;
 	var door_center_y = obj_Door.y + obj_Door.sprite_height * 0.5;
 	draw_text(1080, 240, "Distance Door: " + string(point_distance(obj_Player.x, obj_Player.y, door_center_x, door_center_y)));
+	try
+	{
+		var treasure_center_x = obj_ParentTreasure.x + obj_ParentTreasure.sprite_width * 0.5;
+		var treasure_center_y = obj_ParentTreasure.y + obj_ParentTreasure.sprite_height * 0.5;
+		draw_text(1080, 260, "Distance Chest: " + string(point_distance(obj_Player.x, obj_Player.y, treasure_center_x, treasure_center_y)));
+	}
+	catch (exception_unhandled_handler)
+	{
+		// nur am chillen
+		// ka, der braucht ein catch weil er a klanes kind is
+	}
 }
