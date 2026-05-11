@@ -1,10 +1,9 @@
 if (place_meeting(x, y, obj_Player))
 {
 		
-	if (statToIncrease == "maxSpeed")
+	if (statToIncrease == "sprintMultiplier")
 		{
-			obj_Player.maxSpeed += increaseModifier;
-			obj_Player.accel += increaseModifier;
+			obj_Player.sprintMultiplier += increaseModifier;
 		}
 
 	if (statToIncrease == "damageMultiplier")
