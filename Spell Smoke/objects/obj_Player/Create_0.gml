@@ -72,6 +72,6 @@ function GetHit(damage, type) {
 //	}
 }
 
-window_set_fullscreen(false)
+window_set_fullscreen(true)
 
 debug = true;

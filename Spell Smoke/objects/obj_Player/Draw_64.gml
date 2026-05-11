@@ -130,8 +130,33 @@ if(debug == true)
 {
 	draw_text(1080, 40, "X: " + string(obj_Player.x));
 	draw_text(1080, 60, "Y: " + string(obj_Player.y));
-	draw_text(1080, 80, "XSpeed: " + string(obj_Player.xSpeed));
-	draw_text(1080, 100, "YSpeed: " + string(obj_Player.ySpeed));
+	if(keyboard_check(vk_shift))
+	{
+		draw_text(1080, 80, "XSpeed: " + string(obj_Player.xSpeed));
+		draw_text(1080, 100, "YSpeed: " + string(obj_Player.ySpeed));
+	}
+	else
+	{
+		if(sprintMultiplier >= 4)
+		{
+			draw_text(1080, 80, "XSpeed: " + string(obj_Player.xSpeed*1.5));
+			draw_text(1080, 100, "YSpeed: " + string(obj_Player.ySpeed*1.5));
+		}
+		else
+		{
+			if(sprintMultiplier > 1.5 && sprintMultiplier < 4)
+			{
+				draw_text(1080, 80, "XSpeed: " + string(obj_Player.xSpeed*1.15));
+				draw_text(1080, 100, "YSpeed: " + string(obj_Player.ySpeed*1.15));
+			}
+			else
+			{
+				draw_text(1080, 80, "XSpeed: " + string(obj_Player.xSpeed/1.2));
+				draw_text(1080, 100, "YSpeed: " + string(obj_Player.ySpeed/1.2));
+			}
+		}
+	}
+	
 	draw_text(1080, 120, "MaxSpeed: " + string(obj_Player.maxSpeed));
 	draw_text(1080, 140, "Accel: " + string(obj_Player.accel));
 	draw_text(1080, 160, "DirectionLooking: " + string(obj_Player.directionLooking));

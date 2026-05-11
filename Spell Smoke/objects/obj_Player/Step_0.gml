@@ -60,18 +60,20 @@
 
 	// bei mehr als 5 Speed Bossts einfach bei 5 bleiben, weil sonst unspielbar
 	
-	if(sprintMultiplier >= 5)
+	if(sprintMultiplier >= 4)
 	{
-		sprintMultiplier = 5;
+		sprintMultiplier = 4;
 		move_and_collide(xSpeed*1.5, ySpeed*1.5, obj_ParentSolid)
 	}
-	
-	if(sprintMultiplier > 1.5)
-	{
-		move_and_collide(xSpeed*1.15, ySpeed*1.15, obj_ParentSolid)
-	}
 	else
-		move_and_collide(xSpeed/1.2, ySpeed/1.2, obj_ParentSolid);
+	{
+		if(sprintMultiplier > 1.5 && sprintMultiplier < 4)
+		{
+			move_and_collide(xSpeed*1.15, ySpeed*1.15, obj_ParentSolid)
+		}
+		else
+			move_and_collide(xSpeed/1.2, ySpeed/1.2, obj_ParentSolid);
+	}
 	
 #endregion Movement
 #region Sprites
