@@ -2,7 +2,7 @@ function ApplyTreasureModifiers(treasure){
 	
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Speed")
 		{
-			obj_ParentItem.statToIncrease = "maxSpeed";
+			obj_ParentItem.statToIncrease = "sprintMultiplier";
 			obj_ParentItem.increaseModifier = 1;
 			obj_ParentItem.sprite_index = spr_TreasureSpeed;
 		}
