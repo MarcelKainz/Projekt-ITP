@@ -1,0 +1,1 @@
+lootTable = ["Bone", "Heal", "Key"];
