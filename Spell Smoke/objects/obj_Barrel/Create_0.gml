@@ -1,1 +1,1 @@
-lootTable = ["Bone", "Heal", "Key"];
+lootTable = ["Bone", "Heal", "Key"]; //weitermachen
