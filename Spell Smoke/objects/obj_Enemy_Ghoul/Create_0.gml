@@ -1,10 +1,8 @@
 behaviour = Idle; //states: Idle | Attack | Flee | Special
 player = instance_find(obj_Player, 0);
-iFrames = 0;
 
 function GetHit(damage, type) {
 	hp -= damage;
-	iFrames = 30;
 	
 	if (hp <= 0)
 		instance_destroy();
