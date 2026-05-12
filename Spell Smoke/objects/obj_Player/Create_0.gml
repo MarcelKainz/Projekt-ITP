@@ -55,6 +55,7 @@ damageMultiplier = 1;
 cooldown = 30;
 
 bones = 0;
+keys = 0;
 
 
 function GetHit(damage, type) {
