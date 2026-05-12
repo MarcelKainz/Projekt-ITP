@@ -47,7 +47,7 @@ xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
 accel = 1;
-sprintMultiplier = 1.5;
+sprintMultiplier = 1.25;
 directionLooking = "down";
 hitcooldown = 0;
 
