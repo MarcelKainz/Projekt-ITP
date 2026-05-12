@@ -54,7 +54,7 @@ hitcooldown = 0;
 damageMultiplier = 1;
 cooldown = 30;
 
-bones = 0;
+bones = 10;
 keys = 0;
 
 

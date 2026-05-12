@@ -123,6 +123,9 @@ draw_text(80, 120, string(obj_Player.sprintMultiplier));
 draw_sprite(spr_TreasurePower, 0, 32, 146);
 draw_text(80, 152, string(obj_Player.damageMultiplier));
 
+draw_sprite(spr_Bone, 0, 32, 178);
+draw_text(80, 184, string(obj_Player.bones));
+
 
 
 //Debug Sachen
