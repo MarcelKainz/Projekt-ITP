@@ -1,6 +1,7 @@
-behaviour = Idle; //states: Idle | Attack | Flee | Special
+behaviour = Idle; //states: Idle | Attack
 player = instance_find(obj_Player, 0);
-iFrames = 0;
+iFrames = 0; //wird 30
+FleeDuration = 0; //wird <Zahl>
 
 function GetHit(damage, type) {
 	hp -= damage;
@@ -20,9 +21,12 @@ function Attack() {
 	y += player.y < y ? -1 : 1;*/
 	mp_potential_step(player.x, player.y, moveSpeed, false) //move toward Player, dodge solids
 	
-	if (place_meeting(x, y, player) && player.hitcooldown == 0)
-		player.GetHit(damage, dmgType);
+	if (point_distance(x, y, player.x, player.y))
+		Hit();
+}
+function Hit() { 
+	
 }
 function Flee() {
-	//...
+	
 }
