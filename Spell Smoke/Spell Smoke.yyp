@@ -47,6 +47,7 @@
   },
   "name":"Spell Smoke",
   "resources":[
+    {"id":{"name":"obj_Bone","path":"objects/obj_Bone/obj_Bone.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
     {"id":{"name":"obj_DummyGoodBullet","path":"objects/obj_DummyGoodBullet/obj_DummyGoodBullet.yy",},},

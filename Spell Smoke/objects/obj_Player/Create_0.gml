@@ -52,11 +52,9 @@ directionLooking = "down";
 hitcooldown = 0;
 
 damageMultiplier = 1;
-
-
-
-
 cooldown = 30;
+
+bones = 0;
 
 
 function GetHit(damage, type) {
