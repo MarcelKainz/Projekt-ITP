@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sou_Health",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.17820862,
+  "exportDir":"",
+  "name":"sou_Health",
+  "parent":{
+    "name":"SoundEffects",
+    "path":"folders/Sounds/SoundEffects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sou_Health.wav",
+  "volume":1.0,
+}
