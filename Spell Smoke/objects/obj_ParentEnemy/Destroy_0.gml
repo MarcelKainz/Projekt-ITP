@@ -1,1 +1,1 @@
-instance_create(x, y, obj_Bone);
+instance_create_layer(x, y, obj_Bone, 0)

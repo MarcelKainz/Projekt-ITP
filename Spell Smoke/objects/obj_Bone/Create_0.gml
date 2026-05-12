@@ -1,1 +1,1 @@
-var boneamount;
+boneamount = 4;
