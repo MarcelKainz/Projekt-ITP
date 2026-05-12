@@ -50,6 +50,7 @@
   },
   "name":"Spell Smoke",
   "resources":[
+    {"id":{"name":"obj_Barrel","path":"objects/obj_Barrel/obj_Barrel.yy",},},
     {"id":{"name":"obj_Bone","path":"objects/obj_Bone/obj_Bone.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
@@ -95,6 +96,7 @@
     {"id":{"name":"sou_Teleport","path":"sounds/sou_Teleport/sou_Teleport.yy",},},
     {"id":{"name":"sou_Theme","path":"sounds/sou_Theme/sou_Theme.yy",},},
     {"id":{"name":"sou_TitleScreen","path":"sounds/sou_TitleScreen/sou_TitleScreen.yy",},},
+    {"id":{"name":"spr_Barrel","path":"sprites/spr_Barrel/spr_Barrel.yy",},},
     {"id":{"name":"spr_Bone","path":"sprites/spr_Bone/spr_Bone.yy",},},
     {"id":{"name":"spr_bulletBall","path":"sprites/spr_bulletBall/spr_bulletBall.yy",},},
     {"id":{"name":"spr_Chest","path":"sprites/spr_Chest/spr_Chest.yy",},},
