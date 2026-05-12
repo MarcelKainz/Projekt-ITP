@@ -1,33 +1,35 @@
 function ApplyTreasureModifiers(treasure){
 	
+	var latestItem = instance_find(obj_ParentItem, instance_number(obj_ParentItem) - 1);
+	
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Speed")
 		{
-			obj_ParentItem.statToIncrease = "sprintMultiplier";
-			obj_ParentItem.increaseModifier = 0.75;
-			obj_ParentItem.sprite_index = spr_TreasureSpeed;
+			latestItem.statToIncrease = "sprintMultiplier";
+			latestItem.increaseModifier = 0.75;
+			latestItem.sprite_index = spr_TreasureSpeed;
 		}
 		
 		
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Power")
 		{
-			obj_ParentItem.statToIncrease = "damageMultiplier";
-			obj_ParentItem.increaseModifier = 1;
-			obj_ParentItem.sprite_index = spr_TreasurePower;
+			latestItem.statToIncrease = "damageMultiplier";
+			latestItem.increaseModifier = 1;
+			latestItem.sprite_index = spr_TreasurePower;
 		}
 		
 		
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Health")
 		{
-			obj_ParentItem.statToIncrease = "max_hp";
-			obj_ParentItem.increaseModifier = 1;
-			obj_ParentItem.sprite_index = spr_TreasureHealth;
+			latestItem.statToIncrease = "max_hp";
+			latestItem.increaseModifier = 1;
+			latestItem.sprite_index = spr_TreasureHealth;
 		}
 		
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Heal")
 		{
-			obj_ParentItem.statToIncrease = "hp";
-			obj_ParentItem.increaseModifier = 2;
-			obj_ParentItem.sprite_index = spr_TreasureHeal;
+			latestItem.statToIncrease = "hp";
+			latestItem.increaseModifier = 2;
+			latestItem.sprite_index = spr_TreasureHeal;
 		}
 	
 }

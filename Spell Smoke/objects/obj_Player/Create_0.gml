@@ -1,7 +1,7 @@
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-endlessMode = true;
+endlessMode = false;
 difficulty = "easy";
 
 if (endlessMode)
