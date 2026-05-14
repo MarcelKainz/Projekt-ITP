@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EndlessModeButton",
+  "%Name":"obj_HardDifficultyButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_EndlessModeButton",
+  "name":"obj_HardDifficultyButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Menu",
@@ -34,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_EndlessModeButton",
-    "path":"sprites/spr_EndlessModeButton/spr_EndlessModeButton.yy",
+    "name":"spr_HardDifficultyButton",
+    "path":"sprites/spr_HardDifficultyButton/spr_HardDifficultyButton.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_EasyDifficultyButton",
+    "path":"sprites/spr_EasyDifficultyButton/spr_EasyDifficultyButton.yy",
+  },
   "visible":true,
 }
