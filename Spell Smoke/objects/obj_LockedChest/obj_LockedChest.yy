@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_LockedChest",
-    "path":"sprites/spr_LockedChest/spr_LockedChest.yy",
+    "name":"spr_ChestLocked",
+    "path":"sprites/spr_ChestLocked/spr_ChestLocked.yy",
   },
   "spriteMaskId":null,
   "visible":true,

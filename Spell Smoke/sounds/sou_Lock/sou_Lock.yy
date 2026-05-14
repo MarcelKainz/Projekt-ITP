@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"sou_Lock",
   "parent":{
-    "name":"SoundEffects",
-    "path":"folders/Sounds/SoundEffects.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
