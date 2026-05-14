@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_LockedChest",
   "bboxMode":0,
-  "bbox_bottom":31,
+  "bbox_bottom":21,
   "bbox_left":0,
-  "bbox_right":31,
+  "bbox_right":23,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"e67d3a72-31ec-4a2f-9a97-c0338bc891b3","name":"e67d3a72-31ec-4a2f-9a97-c0338bc891b3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ab9def6e-e42d-4c04-8189-7ebda7727111","name":"ab9def6e-e42d-4c04-8189-7ebda7727111","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":22,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a4bf0f93-8d72-4f33-baac-43fbf5cfc719","blendMode":0,"displayName":"default","isLocked":false,"name":"a4bf0f93-8d72-4f33-baac-43fbf5cfc719","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"325330b9-611f-47c2-acbc-5e671e536467","blendMode":0,"displayName":"default","isLocked":false,"name":"325330b9-611f-47c2-acbc-5e671e536467","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_LockedChest",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e67d3a72-31ec-4a2f-9a97-c0338bc891b3","path":"sprites/spr_LockedChest/spr_LockedChest.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8382a68c-4043-489b-bb67-41fdfb713126","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ab9def6e-e42d-4c04-8189-7ebda7727111","path":"sprites/spr_LockedChest/spr_LockedChest.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fca10728-b793-4f14-9c57-c3bf83fe59e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":24,
 }

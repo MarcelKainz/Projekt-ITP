@@ -2,7 +2,7 @@
 function RoomLogic(){
 	if(obj_Player.roomsToBoss < obj_Player.roomsPassed)
 		{
-			game_end();
+			GameWin();
 		}
 	else if(obj_Player.roomsToBoss > obj_Player.roomsPassed)
 		{

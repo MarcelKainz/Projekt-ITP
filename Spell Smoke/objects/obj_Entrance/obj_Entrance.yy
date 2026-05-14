@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Entrance",
-    "path":"sprites/spr_Entrance/spr_Entrance.yy",
+    "name":"spr_Door",
+    "path":"sprites/spr_Door/spr_Door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

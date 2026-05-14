@@ -12,8 +12,8 @@
     "path":"folders/Objects/Treasure.yy",
   },
   "parentObjectId":{
-    "name":"obj_ParentSolid",
-    "path":"objects/obj_ParentSolid/obj_ParentSolid.yy",
+    "name":"obj_ParentTreasure",
+    "path":"objects/obj_ParentTreasure/obj_ParentTreasure.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
