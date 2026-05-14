@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_LockedChest",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ParentButton",
+  "eventList":[],
   "managed":true,
-  "name":"obj_LockedChest",
+  "name":"obj_ParentButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Treasure",
-    "path":"folders/Objects/Treasure.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
-  "parentObjectId":{
-    "name":"obj_ParentTreasure",
-    "path":"objects/obj_ParentTreasure/obj_ParentTreasure.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_LockedChest",
-    "path":"sprites/spr_LockedChest/spr_LockedChest.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

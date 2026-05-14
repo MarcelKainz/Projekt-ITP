@@ -18,21 +18,12 @@ if (place_meeting(x, y, obj_Player))
 			obj_Player.hp += increaseModifier;
 		}
 	
-	if(statToIncrease == "hp")
-		{
-			if(obj_Player.max_hp-2 >= obj_Player.hp)
-			{
-				obj_Player.hp += increaseModifier;
-			}
-			else if(obj_Player.max_hp-1 == obj_Player.hp)
-			{
-				obj_Player.hp += increaseModifier - 1;
-			}
-			else
-			{
-				obj_Player.hp += increaseModifier - 2;
-			}
-		}
+	if (statToIncrease == "hp")
+	{
+	    obj_Player.hp += increaseModifier;
+
+	    obj_Player.hp = clamp(obj_Player.hp, 0, obj_Player.max_hp);
+	}
 		
 	instance_destroy();
 }

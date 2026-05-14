@@ -101,14 +101,16 @@ draw_sprite(spr_Door, 0, 32, 68);
 
 if(roomsPassed <= roomsToBoss)
 {
-	if(endlessMode == false){
+	if(endlessMode == false)
+	{
 		draw_text(80, 76,
 		    string(roomsPassed) + "/" + string(roomsToBoss)
 		);
 	}
-	else{
+	else
+	{
 		draw_text(80, 76,
-		    string(roomsPassed) + " (Endless)"
+		    string(roomsPassed) + " (" + string(global.difficulty) + " Endless)"
 		);
 	}
 }
@@ -123,8 +125,8 @@ draw_text(80, 120, string(obj_Player.sprintMultiplier));
 draw_sprite(spr_TreasurePower, 0, 32, 146);
 draw_text(80, 152, string(obj_Player.damageMultiplier));
 
-draw_sprite(spr_Key, 0, 32, 178);
-draw_text(80, 184, string(obj_Player.keys));
+draw_sprite(spr_Bone, 0, 32, 178); //spr_Key
+draw_text(80, 184, string(obj_Player.bones)); //obj_Player.keys
 
 draw_sprite(spr_Bone, 0, 32, 210);
 draw_text(80, 216, string(obj_Player.bones));
@@ -183,4 +185,6 @@ if(debug == true)
 		// nur am chillen
 		// ka, der braucht ein catch weil er a klanes kind is
 	}
+	draw_text(1080, 280, "RoomsPassed: " + string(obj_Player.roomsPassed));
+	draw_text(1080, 300, "RoomsToBoss: " + string(obj_Player.roomsToBoss));
 }

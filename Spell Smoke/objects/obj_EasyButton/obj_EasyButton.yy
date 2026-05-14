@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_LockedChest",
+  "%Name":"obj_EasyButton",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_LockedChest",
+  "name":"obj_EasyButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Treasure",
-    "path":"folders/Objects/Treasure.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
   "parentObjectId":{
-    "name":"obj_ParentTreasure",
-    "path":"objects/obj_ParentTreasure/obj_ParentTreasure.yy",
+    "name":"obj_ParentButton",
+    "path":"objects/obj_ParentButton/obj_ParentButton.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_LockedChest",
-    "path":"sprites/spr_LockedChest/spr_LockedChest.yy",
+    "name":"spr_EasyButton",
+    "path":"sprites/spr_EasyButton/spr_EasyButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

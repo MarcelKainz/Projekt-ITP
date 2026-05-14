@@ -1,16 +1,18 @@
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
+// Create Event
+
 endlessMode = false;
 difficulty = "easy";
 
-if (endlessMode)
+if (global.endlessmode)
 {
     roomsToBoss = infinity;
 }
 else
 {
-    switch (difficulty)
+    switch (global.difficulty)
     {
         case "easy":
             roomsToBoss = 20;
@@ -23,11 +25,12 @@ else
         case "hard":
             roomsToBoss = 10;
         break;
-
-        default:
-            roomsToBoss = 20;
     }
 }
+
+endlessMode = global.endlessmode;
+difficulty = global.difficulty;
+
 roomsPassed = 0;
 roomsBeenTo = [];
 allrooms = [];
@@ -71,6 +74,5 @@ function GetHit(damage, type) {
 //	}
 }
 
-window_set_fullscreen(true)
 
 debug = true;
