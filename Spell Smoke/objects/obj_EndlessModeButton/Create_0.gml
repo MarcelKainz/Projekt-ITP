@@ -1,2 +1,1 @@
-// Create Event
 endlessmode = false;

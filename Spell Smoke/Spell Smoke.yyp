@@ -52,6 +52,7 @@
   "resources":[
     {"id":{"name":"obj_Bone","path":"objects/obj_Bone/obj_Bone.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
+    {"id":{"name":"obj_DifficultySelected","path":"objects/obj_DifficultySelected/obj_DifficultySelected.yy",},},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
     {"id":{"name":"obj_DummyGoodBullet","path":"objects/obj_DummyGoodBullet/obj_DummyGoodBullet.yy",},},
     {"id":{"name":"obj_EasyDifficultyButton","path":"objects/obj_EasyDifficultyButton/obj_EasyDifficultyButton.yy",},},
@@ -73,6 +74,7 @@
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"obj_PlayerBullet","path":"objects/obj_PlayerBullet/obj_PlayerBullet.yy",},},
     {"id":{"name":"obj_QuitButton","path":"objects/obj_QuitButton/obj_QuitButton.yy",},},
+    {"id":{"name":"obj_ReturnToStartMenu","path":"objects/obj_ReturnToStartMenu/obj_ReturnToStartMenu.yy",},},
     {"id":{"name":"obj_SettingButton","path":"objects/obj_SettingButton/obj_SettingButton.yy",},},
     {"id":{"name":"obj_Sound","path":"objects/obj_Sound/obj_Sound.yy",},},
     {"id":{"name":"obj_StartButton","path":"objects/obj_StartButton/obj_StartButton.yy",},},
@@ -130,6 +132,7 @@
     {"id":{"name":"spr_Player_walk_right","path":"sprites/spr_Player_walk_right/spr_Player_walk_right.yy",},},
     {"id":{"name":"spr_Player_walk_up","path":"sprites/spr_Player_walk_up/spr_Player_walk_up.yy",},},
     {"id":{"name":"spr_QuitButton","path":"sprites/spr_QuitButton/spr_QuitButton.yy",},},
+    {"id":{"name":"spr_Return","path":"sprites/spr_Return/spr_Return.yy",},},
     {"id":{"name":"spr_SettingButton","path":"sprites/spr_SettingButton/spr_SettingButton.yy",},},
     {"id":{"name":"spr_StartButton","path":"sprites/spr_StartButton/spr_StartButton.yy",},},
     {"id":{"name":"spr_Tileset1","path":"sprites/spr_Tileset1/spr_Tileset1.yy",},},
