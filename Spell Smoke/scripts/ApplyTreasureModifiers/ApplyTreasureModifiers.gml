@@ -37,7 +37,7 @@ function ApplyTreasureModifiers(treasure){
 	if (obj_ParentTreasure.TreasurePool[treasure] == "Health")
 		{
 			latestItem.statToIncrease = "max_hp";
-			latestItem.increaseModifier = 1;
+			latestItem.increaseModifier = 2;
 			latestItem.sprite_index = spr_TreasureHealth;
 		}
 		

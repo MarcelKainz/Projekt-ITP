@@ -10,8 +10,3 @@ else if(global.difficulty == "hard")
 {	
 	obj_DifficultySelected.sprite_index = spr_HardDifficultyButton;
 }
-
-if(global.endlessmode)
-{
-	obj_DifficultySelected.sprite_index = spr_EndlessModeButton;
-}
