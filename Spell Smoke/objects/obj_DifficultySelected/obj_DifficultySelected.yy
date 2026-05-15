@@ -3,6 +3,8 @@
   "%Name":"obj_DifficultySelected",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_DifficultySelected",
@@ -11,7 +13,10 @@
     "name":"Menu",
     "path":"folders/Objects/Menu.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_EasyDifficultyButton",
+    "path":"objects/obj_EasyDifficultyButton/obj_EasyDifficultyButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
