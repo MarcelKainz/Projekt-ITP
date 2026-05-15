@@ -5,7 +5,7 @@ if(global.endlessmode)
 {
 	if (obj_EndlessSelected.sprite_index == spr_EndlessModeButton){
 		draw_text(x-32, y-100, global.difficulty + " Endless");
-		draw_text(x-32, y-150, "No boss. look how long you can survive in the " + global.difficulty + " dungeon.");
+		draw_text(x-32, y-150, "No boss. look how long you can survive in the " + global.difficulty + " endless dungeon.");
 	}
 }
 else if (!global.endlessmode){

@@ -17,4 +17,4 @@ draw_circle(
 
 // Text
 draw_text(x, y - 40,
-    "Volume: " + string(round(global.volume * 100)) + "%");
+    "Master Volume: " + string(round(global.volume * 100)) + "%");
