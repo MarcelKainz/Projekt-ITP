@@ -125,8 +125,8 @@ draw_text(80, 120, string(obj_Player.sprintMultiplier));
 draw_sprite(spr_TreasurePower, 0, 32, 146);
 draw_text(80, 152, string(obj_Player.damageMultiplier));
 
-draw_sprite(spr_Bone, 0, 32, 178); //spr_Key
-draw_text(80, 184, string(obj_Player.bones)); //obj_Player.keys
+//draw_sprite(spr_Key, 0, 32, 178); //spr_Key
+draw_text(80, 184, string(obj_Player.keys)); //obj_Player.keys
 
 draw_sprite(spr_Bone, 0, 32, 210);
 draw_text(80, 216, string(obj_Player.bones));
@@ -177,7 +177,7 @@ if(debug == true)
 	try
 	{
 		var treasure_center_x = obj_ParentTreasure.x + obj_ParentTreasure.sprite_width * 0.5;
-		var treasure_center_y = obj_ParentTreasure.y + obj_ParentTreasure.sprite_height * 0.5;
+		var treasure_center_y = obj_ParentTreasure.y - obj_ParentTreasure.sprite_height * 0.5;
 		draw_text(1080, 260, "Distance Chest: " + string(point_distance(obj_Player.x, obj_Player.y, treasure_center_x, treasure_center_y)));
 	}
 	catch (exception_unhandled_handler)
