@@ -2,4 +2,4 @@ endlessmode = !endlessmode;
 
 EndlessMode(endlessmode);
 
-obj_DifficultySelected.sprite_index = spr_EndlessModeButton;
+obj_EndlessSelected.endlessActivated = !obj_EndlessSelected.endlessActivated;

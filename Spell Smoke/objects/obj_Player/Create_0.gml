@@ -15,7 +15,7 @@ else
     switch (global.difficulty)
     {
         case "easy":
-            roomsToBoss = 20;
+            roomsToBoss = 10;
         break;
 
         case "middle":
@@ -23,7 +23,7 @@ else
         break;
 
         case "hard":
-            roomsToBoss = 10;
+            roomsToBoss = 20;
         break;
     }
 }
@@ -56,9 +56,10 @@ hitcooldown = 0;
 
 damageMultiplier = 1;
 cooldown = 30;
+attackRange = 150;
 
 bones = 0;
-keys = 1;
+keys = 2;
 
 
 function GetHit(damage, type) {
