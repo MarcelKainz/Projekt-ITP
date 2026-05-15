@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_38F67342","path":"rooms/rm_SettingMenu/rm_SettingMenu.yy",},
     {"name":"inst_5A882B99","path":"rooms/rm_SettingMenu/rm_SettingMenu.yy",},
     {"name":"inst_39FC3790","path":"rooms/rm_SettingMenu/rm_SettingMenu.yy",},
     {"name":"inst_2AA01A2D","path":"rooms/rm_SettingMenu/rm_SettingMenu.yy",},
@@ -15,7 +14,6 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_38F67342","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38F67342","objectId":{"name":"obj_MenuController","path":"objects/obj_MenuController/obj_MenuController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":704.0,},
         {"$GMRInstance":"v4","%Name":"inst_5A882B99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A882B99","objectId":{"name":"obj_SoundButton","path":"objects/obj_SoundButton/obj_SoundButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":483.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_39FC3790","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_39FC3790","objectId":{"name":"obj_VolumeSlider","path":"objects/obj_VolumeSlider/obj_VolumeSlider.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":583.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_2AA01A2D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2AA01A2D","objectId":{"name":"obj_ReturnToStartMenu","path":"objects/obj_ReturnToStartMenu/obj_ReturnToStartMenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":64.0,},

@@ -12,8 +12,8 @@
     "path":"folders/Objects/Menu.yy",
   },
   "parentObjectId":{
-    "name":"obj_ParentButton",
-    "path":"objects/obj_ParentButton/obj_ParentButton.yy",
+    "name":"obj_MenuController",
+    "path":"objects/obj_MenuController/obj_MenuController.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
