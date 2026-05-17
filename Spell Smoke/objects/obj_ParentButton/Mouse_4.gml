@@ -1,0 +1,1 @@
+audio_play_sound(sou_Lock, 1, false);
