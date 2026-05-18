@@ -1,3 +1,5 @@
+event_inherited();
+
 global.isMuted = !global.isMuted;
 
 if (global.isMuted)

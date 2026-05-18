@@ -1,3 +1,5 @@
+event_inherited();
+
 endlessmode = !endlessmode;
 
 EndlessMode(endlessmode);
