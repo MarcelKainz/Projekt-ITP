@@ -21,8 +21,14 @@ function Idle() {
 	//...	
 }
 function Attack() {
-	//...
+	if (point_distance(x, y, player.x, player.y) < 20)
+		Hit();
 }
+function Hit() { 
+	hitPlayer = true;
+	dmgType = "physical";
+}
+
 function Flee() {
 	//...
 }

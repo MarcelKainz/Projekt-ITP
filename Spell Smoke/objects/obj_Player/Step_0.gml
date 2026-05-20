@@ -125,7 +125,7 @@
 		
 	}
 	//Wenn man Gegner berührt, aber noch buggy, ka wieso
-	/*if(enemyHit != noone)
+	if(enemyHit != noone)
 	{
 		if(enemyHit.hitPlayer)
 		{
@@ -135,7 +135,7 @@
 			}
 		}
 	}
-	*/
+	
 	
 	if(hitcooldown > 0)
 	{
