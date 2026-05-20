@@ -46,12 +46,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.5.1065",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Spell Smoke",
   "resources":[
     {"id":{"name":"obj_Bone","path":"objects/obj_Bone/obj_Bone.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
+    {"id":{"name":"obj_DebugButton","path":"objects/obj_DebugButton/obj_DebugButton.yy",},},
     {"id":{"name":"obj_DifficultySelected","path":"objects/obj_DifficultySelected/obj_DifficultySelected.yy",},},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},},
     {"id":{"name":"obj_DummyGoodBullet","path":"objects/obj_DummyGoodBullet/obj_DummyGoodBullet.yy",},},
@@ -124,6 +125,8 @@
     {"id":{"name":"spr_Chest","path":"sprites/spr_Chest/spr_Chest.yy",},},
     {"id":{"name":"spr_ChestLocked","path":"sprites/spr_ChestLocked/spr_ChestLocked.yy",},},
     {"id":{"name":"spr_ChestOpening","path":"sprites/spr_ChestOpening/spr_ChestOpening.yy",},},
+    {"id":{"name":"spr_DebugMode","path":"sprites/spr_DebugMode/spr_DebugMode.yy",},},
+    {"id":{"name":"spr_DebugModeSelected","path":"sprites/spr_DebugModeSelected/spr_DebugModeSelected.yy",},},
     {"id":{"name":"spr_DebugSolid","path":"sprites/spr_DebugSolid/spr_DebugSolid.yy",},},
     {"id":{"name":"spr_Door","path":"sprites/spr_Door/spr_Door.yy",},},
     {"id":{"name":"spr_DoorLocked","path":"sprites/spr_DoorLocked/spr_DoorLocked.yy",},},

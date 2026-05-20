@@ -21,12 +21,13 @@ function Attack() {
 	y += player.y < y ? -1 : 1;*/
 	mp_potential_step(player.x, player.y, moveSpeed, false) //move toward Player, dodge solids
 	
-	if (point_distance(x, y, player.x, player.y))
+	if (point_distance(x, y, player.x, player.y) < 20)
 		Hit();
 }
 function Hit() { 
-	
+	hitPlayer = true;
+	dmgType = "physical";
 }
 function Flee() {
-	
+	//...
 }

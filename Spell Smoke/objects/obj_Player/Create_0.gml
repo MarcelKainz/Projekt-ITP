@@ -4,7 +4,7 @@ gml_pragma("MarkTagAsUsed", "playerSpr");
 // Create Event
 
 endlessMode = false;
-difficulty = "easy";
+difficulty = "";
 
 if (global.endlessmode)
 {
@@ -76,4 +76,4 @@ function GetHit(damage, type) {
 }
 
 
-debug = true;
+debug = global.debug;
