@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Treasure",
-    "path":"folders/Objects/Treasure.yy",
+    "path":"folders/Objects/Environment/Treasure.yy",
   },
   "parentObjectId":{
     "name":"obj_ParentTreasure",

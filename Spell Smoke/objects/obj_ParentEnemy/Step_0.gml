@@ -7,3 +7,5 @@ if (iFrames <= 0) {
 } else iFrames--;
 	
 behaviour();
+
+damageFlash = max(0, damageFlash - 0.08)
