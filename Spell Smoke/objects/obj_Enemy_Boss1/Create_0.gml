@@ -23,7 +23,7 @@ function Idle() {
 	action = random(1);
 	
 	if (action < 0.2)
-	{}
+	behaviour = SludgeShoot();
 	else if (action < 0.5)
 	behaviour = Rush;
 }
@@ -32,7 +32,7 @@ function Rush() { //rush toward player, crash into walls. Do a few times, then b
 	
 }
 
-function Idk() {
+function SludgeShoot() { //shoot sludge in high arch while resisting/invulnerable to damage
 	
 }
 
