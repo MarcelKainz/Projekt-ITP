@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"NextRoomBoss",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Rooms",
+    "path":"folders/Scripts/Rooms.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

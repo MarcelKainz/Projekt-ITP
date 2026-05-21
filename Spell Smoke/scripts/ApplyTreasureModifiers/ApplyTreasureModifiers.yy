@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"ApplyTreasureModifiers",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Treasure",
+    "path":"folders/Scripts/Treasure.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

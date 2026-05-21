@@ -1,8 +1,10 @@
-function ApplyTreasureModifiers(treasure){
+function ApplyTreasureModifiers(treasure, type){
 	
 	var latestItem = instance_find(obj_ParentItem, instance_number(obj_ParentItem) - 1);
 	
-	if (obj_ParentTreasure.TreasurePool[treasure] == "Speed")
+	if (type = "Treasure"){
+		
+	if (obj_ParentTreasure.itemPool[treasure] == "Speed")
 		{
 			latestItem.statToIncrease = "sprintMultiplier";
 			latestItem.increaseModifier = 0.75;
@@ -10,7 +12,7 @@ function ApplyTreasureModifiers(treasure){
 		}
 		
 		
-	if (obj_ParentTreasure.TreasurePool[treasure] == "Power")
+	if (obj_ParentTreasure.itemPool[treasure] == "Power")
 		{
 			latestItem.statToIncrease = "damageMultiplier";
 				
@@ -34,31 +36,60 @@ function ApplyTreasureModifiers(treasure){
 		}
 		
 		
-	if (obj_ParentTreasure.TreasurePool[treasure] == "Health")
+	if (obj_ParentTreasure.itemPool[treasure] == "Health")
 		{
 			latestItem.statToIncrease = "max_hp";
 			latestItem.increaseModifier = 2;
 			latestItem.sprite_index = spr_TreasureHealth;
 		}
 		
-	if (obj_ParentTreasure.TreasurePool[treasure] == "Heal")
+	}
+	
+	
+	
+	if (type = "Shop"){
+		
+	if (obj_ShopItem.itemPool[treasure] == "Heal")
 		{
-			latestItem.statToIncrease = "hp";
+			latestItem.statToIncrease = "heal";
+			latestItem.increaseModifier = 2;
+			latestItem.sprite_index = spr_TreasureHeal;
 			switch (global.difficulty)
 		    {
 		        case "easy":
-					latestItem.increaseModifier = 2;
+					latestItem.price = 6;
 		        break;
 
 		        case "middle":
-					latestItem.increaseModifier = 1.5;
+					latestItem.price = 12;
 		        break;
 
 		        case "hard":
-					latestItem.increaseModifier = 1;
+					latestItem.price = 18;
 		        break;
 		    }
-			latestItem.sprite_index = spr_TreasureHeal;
 		}
-	
+		
+	if (obj_ShopItem.itemPool[treasure] == "Key")
+		{
+			latestItem.statToIncrease = "key";
+			latestItem.increaseModifier = 1;
+			latestItem.sprite_index = spr_Key;
+			switch (global.difficulty)
+		    {
+		        case "easy":
+					latestItem.price = 4;
+		        break;
+
+		        case "middle":
+					latestItem.price = 8;
+		        break;
+
+		        case "hard":
+					latestItem.price = 12;
+		        break;
+		    }
+		}
+		
+	}
 }
