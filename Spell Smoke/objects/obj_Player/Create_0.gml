@@ -53,6 +53,7 @@ accel = 1;
 sprintMultiplier = 1.25;
 directionLooking = "down";
 hitcooldown = 0;
+damageFlash = 0;
 
 damageMultiplier = 1;
 cooldown = 30;
@@ -67,6 +68,8 @@ function GetHit(damage, type) {
 		hp -= damage;
 	
 		hitcooldown = 25;
+	
+		damageFlash = 1;
 	
 		if(hp <= 0)
 		{

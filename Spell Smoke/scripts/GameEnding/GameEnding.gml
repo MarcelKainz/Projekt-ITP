@@ -4,5 +4,5 @@ function GameWin(){
 }
 
 function GameLose() {
-	game_end()
+	game_restart();
 }

@@ -96,7 +96,7 @@
 #endregion Camera
 #region Shoot
 
-	if (mouse_check_button(mb_left)) && (cooldown < 1)
+	if (mouse_check_button_pressed(mb_left)) && (cooldown < 1)
 	{
 		var bullet = instance_create_layer(x, y, layer, obj_PlayerBullet);
 		bullet.owner = id;
@@ -108,7 +108,7 @@
 		cooldown = cooldown - 1;
 	}
 
-#endregion Shoot
+#endregion Shoot	
 #region Hit
 	var bulletHit = instance_place(x, y, obj_DummyGoodBullet);
 	var enemyHit = instance_place(x, y, obj_ParentEnemy);
@@ -141,5 +141,7 @@
 	{
 		hitcooldown = hitcooldown - 1;
 	}
+	
+	damageFlash = max(0, damageFlash - 0.08);
 	
 #endregion Hit
