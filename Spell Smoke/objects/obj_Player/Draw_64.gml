@@ -143,7 +143,8 @@
 	#endregion Bones
 #endregion DroppedItems
 #region Debug
-	//Debug Sachen
+	draw_text(1080, 20, "Seed: " + string(global.seed));
+	
 	if(debug == true)
 	{
 		draw_text(1080, 40, "X: " + string(obj_Player.x));
