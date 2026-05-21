@@ -1,7 +1,8 @@
+//Seed();
+
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-// Create Event
 
 endlessMode = false;
 difficulty = "";
