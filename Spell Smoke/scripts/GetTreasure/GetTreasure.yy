@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GetTreasure",
   "parent":{
-    "name":"Treasure",
-    "path":"folders/Scripts/Treasure.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
