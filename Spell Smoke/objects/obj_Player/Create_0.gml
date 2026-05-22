@@ -1,6 +1,20 @@
 //Seed();
 
-randomise();
+if (!variable_global_exists("seed"))
+{
+    global.seed = 0;
+}
+
+if (global.seed != 0)
+{
+    random_set_seed(global.seed);
+}
+else
+{
+    randomize();
+
+    global.seed = random_get_seed();
+}
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
 

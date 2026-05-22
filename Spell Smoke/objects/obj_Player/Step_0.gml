@@ -117,3 +117,7 @@
 	
 	damageFlash = max(0, damageFlash - 0.08);
 #endregion Hit
+if(keyboard_check_pressed(vk_enter))
+{
+	export_json("", "");
+}
