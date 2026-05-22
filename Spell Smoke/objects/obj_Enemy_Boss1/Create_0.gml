@@ -42,22 +42,36 @@ function Idle() {
 
 #region Rush
 function RushInitiate() { //rush toward player, crash into walls. Do a few times, then be vulnerable
-	var orientation;
+	var orientation = "y";
 	if (random(1) < 0.5)
-		orientation = "x"; //horizontal
-	else
-		orientation = "y"; //vertical
-	
-	//split map into lines
+		orientation = "x"; //horizontal, else vertical
+
 	if (orientation == "x") {
-		
+		if (x < 715)
+			behaviour = RushMoveL; //left
+		else
+			behaviour = RushMoveR; //right
+	} else {
+		if (y < 400)
+			behaviour = RushMoveT; //top
+		else
+			behaviour = RushMoveB; //bottom
 	}
-	//check which line the player is on
 }
-function RushMove() {
-	//move to start of line
-	//move lines if Player moved and hp is below 40
+#region RushMove
+function RushMoveL() { //edit the exact values depending on the sprite's collision mask
+	//mp_potential
 }
+function RushMoveR() {
+	
+}
+function RushMoveT() {
+	
+}
+function RushMoveB() {
+	
+}
+#endregion
 function RushAttack() {
 	//rush across line into wall
 	//get back to Initiate, repeat a few times
