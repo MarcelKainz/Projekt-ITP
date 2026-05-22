@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_Key",
   "bboxMode":0,
-  "bbox_bottom":12,
+  "bbox_bottom":14,
   "bbox_left":4,
   "bbox_right":11,
-  "bbox_top":2,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"a36a1417-f3dd-44dd-ac4f-ec1c6f118520","name":"a36a1417-f3dd-44dd-ac4f-ec1c6f118520","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":8,
+  "gridY":8,
   "height":16,
   "HTile":false,
   "layers":[
