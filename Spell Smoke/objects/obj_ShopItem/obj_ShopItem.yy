@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Shop",
-    "path":"folders/Objects/Shop.yy",
+    "path":"folders/Objects/Environment/Shop.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_DebugModeSelected",
-    "path":"sprites/spr_DebugModeSelected/spr_DebugModeSelected.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

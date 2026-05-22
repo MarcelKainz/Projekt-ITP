@@ -8,8 +8,8 @@
   "name":"obj_Enemy_Wraith",
   "overriddenProperties":[],
   "parent":{
-    "name":"clioShite",
-    "path":"folders/Objects/clioShite.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_ParentEnemy",

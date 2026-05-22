@@ -110,38 +110,10 @@
 
 #endregion Shoot	
 #region Hit
-	var bulletHit = instance_place(x, y, obj_DummyGoodBullet);
-	var enemyHit = instance_place(x, y, obj_ParentEnemy);
-
-	if (bulletHit != noone)
+	if(iFrames > 0)
 	{
-		if(bulletHit.hitPlayer)
-		{
-			if(hitcooldown <= 0)
-			{
-				GetHit(bulletHit.damage, bulletHit.dmgType);
-			}
-		}
-		
-	}
-	//Wenn man Gegner berührt, aber noch buggy, ka wieso
-	if(enemyHit != noone)
-	{
-		if(enemyHit.hitPlayer)
-		{
-			if(hitcooldown <= 0)
-			{
-				GetHit(enemyHit.damage, enemyHit.dmgType);
-			}
-		}
-	}
-	
-	
-	if(hitcooldown > 0)
-	{
-		hitcooldown = hitcooldown - 1;
+		iFrames--;
 	}
 	
 	damageFlash = max(0, damageFlash - 0.08);
-	
 #endregion Hit

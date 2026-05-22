@@ -1,7 +1,8 @@
+//Seed();
+
 randomise();
 
 gml_pragma("MarkTagAsUsed", "playerSpr");
-// Create Event
 
 endlessMode = false;
 difficulty = "";
@@ -52,7 +53,7 @@ maxSpeed = 1.5;
 accel = 1;
 sprintMultiplier = 1.25;
 directionLooking = "down";
-hitcooldown = 0;
+iFrames = 0;
 damageFlash = 0;
 
 damageMultiplier = 1;
@@ -65,10 +66,11 @@ keys = 2;
 
 function GetHit(damage, type) {
 //	if(bulletHit.dmgType == "enemy"){ //oder so ka wie das geht, macht Marvin glaub oder so, besserer Code noch hinzufügen; nur zum testen
+		if (iFrames > 0)
+			return;
+		
 		hp -= damage;
-	
-		hitcooldown = 25;
-	
+		iFrames = 25;
 		damageFlash = 1;
 	
 		if(hp <= 0)

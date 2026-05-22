@@ -1,5 +1,5 @@
 function NextRoomDefault(){
-
+ 
 	//nachsehen ob ein shop generiert werden darf
 	if (!array_contains(obj_Player.roomsBeenTo, "rm3_1") && !array_contains(obj_Player.roomsBeenTo, "rm3_2"))
 	{
@@ -9,7 +9,6 @@ function NextRoomDefault(){
 	{
 		var shopAllowed = false
 	}
-	
 	// raumtyp basierend auf erlaubtem shop auswählen
 	if(shopAllowed == true)
 	{
@@ -23,27 +22,24 @@ function NextRoomDefault(){
 	}
 	var roomNrAmount = 0; // an der vorhandenen Raumanzahl des Typs auswürfeln || gerade statisch
 	var tempRoomList = obj_Player.allrooms;
-	
 	// nachsehen wieviele Räume es vom Raumtypen gibt
 	for (var ix = 0; ix < array_length(tempRoomList); ix ++)
 	{
 		var tempSubstring = string_split(tempRoomList[ix], "_");
 		if(tempSubstring[0] == "rm" + string(roomType))
 		{
-
+ 
 	        roomNrAmount += 1;
 		}
 	}
-	
 	var roomNr = round(random(roomNrAmount-1) +1)
 	var roomName = "rm" + string(roomType) + "_" + string(roomNr);
 	var roomID = asset_get_index(roomName);
-	
 
+ 
 	show_debug_message(roomName)
 	show_debug_message(obj_Player.roomsBeenTo)
-	
-	
+
 	// räume die nicht gerade erst waren laden
 	if (!array_contains(obj_Player.roomsBeenTo, roomName))
 		{
@@ -59,6 +55,5 @@ function NextRoomDefault(){
 	{
 		NextRoomDefault();
 	}
-	
-	
+
 }

@@ -1,5 +1,6 @@
 behaviour = Idle; //states: Idle | Attack | Flee | Special
 iFrames = 0;
+damageFlash = 0;
 
 function GetHit(damage, type) {
 	//damage resistances & immunities & weaknesses

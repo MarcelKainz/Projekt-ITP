@@ -8,12 +8,12 @@
   "managed":true,
   "name":"obj_PlayerBullet",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"propertyId":{"name":"hitEnemy","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"propertyId":{"name":"hitPlayer","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"propertyId":{"name":"hitEnemy","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"kainzbullets",
-    "path":"folders/Objects/kainzbullets.yy",
+    "name":"Player Attacks",
+    "path":"folders/Objects/Player Attacks.yy",
   },
   "parentObjectId":{
     "name":"obj_ParentBullet",

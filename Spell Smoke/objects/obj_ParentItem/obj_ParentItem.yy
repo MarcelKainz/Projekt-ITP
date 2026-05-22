@@ -10,8 +10,8 @@
   "name":"obj_ParentItem",
   "overriddenProperties":[],
   "parent":{
-    "name":"Treasure",
-    "path":"folders/Objects/Treasure.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
