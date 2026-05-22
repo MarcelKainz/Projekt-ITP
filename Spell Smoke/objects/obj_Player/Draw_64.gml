@@ -143,7 +143,7 @@
 	#endregion Bones
 #endregion DroppedItems
 #region Debug
-	draw_text(1080, 20, "Seed: " + string(global.seed));
+	draw_text(1080, 20, "Seed: " + string(random_get_seed()));
 	
 	if(debug == true)
 	{
@@ -180,7 +180,7 @@
 		draw_text(1080, 140, "Accel: " + string(obj_Player.accel));
 		draw_text(1080, 160, "DirectionLooking: " + string(obj_Player.directionLooking));
 		draw_text(1080, 180, "Cooldown: " + string(obj_Player.cooldown));
-		draw_text(1080, 200, "I-Frames: " + string(obj_Player.iFrames));
+		draw_text(1080, 200, "Hitcooldown: " + string(obj_Player.iFrames));
 		draw_text(1080, 220, "FPS: " + string(fps));
 		var door_center_x = obj_Door.x + obj_Door.sprite_width * 0.5;
 		var door_center_y = obj_Door.y + obj_Door.sprite_height * 0.5;

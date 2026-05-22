@@ -119,6 +119,7 @@
     {"id":{"name":"NextRoomDefault","path":"scripts/NextRoomDefault/NextRoomDefault.yy",},},
     {"id":{"name":"PlayMode","path":"scripts/PlayMode/PlayMode.yy",},},
     {"id":{"name":"RoomLogic","path":"scripts/RoomLogic/RoomLogic.yy",},},
+    {"id":{"name":"SaveTheGame","path":"scripts/SaveTheGame/SaveTheGame.yy",},},
     {"id":{"name":"Seed","path":"scripts/Seed/Seed.yy",},},
     {"id":{"name":"shd_DamageFlash","path":"shaders/shd_DamageFlash/shd_DamageFlash.yy",},},
     {"id":{"name":"sou_Hit","path":"sounds/sou_Hit/sou_Hit.yy",},},
