@@ -4,15 +4,19 @@ iFrames = 0; //wird 30
 FleeDuration = 0; //wird <Zahl>
 damageFlash = 0;
 
-function GetHit(damage, type) {
-	hp -= damage;
+function GetHit(atk) {
+	hp -= atk.damage;
 	iFrames = 30;
 	damageFlash = 1;
+	
+	audio_play_sound(sou_Hit, 1, false);
+	instance_destroy(atk);
 	
 	if (hp <= 0)
 		instance_destroy();
 }
 
+#region behaviours
 function Idle() {
 	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
 		behaviour = Attack;//then attack //danke
@@ -29,3 +33,4 @@ function Hit() {
 function Flee() {
 	//...
 }
+#endregion

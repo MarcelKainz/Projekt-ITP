@@ -2,20 +2,24 @@ behaviour = Idle; //states: Idle | Attack | Flee | Special
 iFrames = 0;
 damageFlash = 0;
 
-function GetHit(damage, type) {
+function GetHit(atk) {
 	//damage resistances & immunities & weaknesses
-	if (array_contains(["physical", "acid"], type)) ////EDIT THIS
+	/*if (array_contains(["physical", "acid"], atk.type)) ////EDIT THIS
 		return;  ///TYPE IS AN ARRAY, THIS WILL BREAK STUFF
-	if (array_contains(["poison", "necrotic"], type))
+	if (array_contains(["poison", "necrotic"], atk.type))
 		damage /= 2;
-	if (array_contains(["radiant", "psychic"], type))
-		damage *= 2;
+	if (array_contains(["radiant", "psychic"], atk.type))
+		damage *= 2;*/
 	
-	hp -= damage;
+	hp -= atk.damage;
+	iFrames = 30;
+	damageFlash = 1;
+	
+	audio_play_sound(sou_Hit, 1, false);
+	instance_destroy(atk);
 	
 	if (hp <= 0)
 		instance_destroy();
-	iFrames = 30;
 }
 
 function Idle() {
