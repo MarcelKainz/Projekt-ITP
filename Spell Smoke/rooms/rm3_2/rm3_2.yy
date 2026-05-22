@@ -45,6 +45,7 @@
     {"name":"inst_46BA123","path":"rooms/rm3_2/rm3_2.yy",},
     {"name":"inst_6E8C8D5C","path":"rooms/rm3_2/rm3_2.yy",},
     {"name":"inst_72DCE0AC","path":"rooms/rm3_2/rm3_2.yy",},
+    {"name":"inst_22BC0E8","path":"rooms/rm3_2/rm3_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -88,13 +89,14 @@
         {"$GMRInstance":"v4","%Name":"inst_46BA123","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46BA123","objectId":{"name":"obj_ShopItem","path":"objects/obj_ShopItem/obj_ShopItem.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":448.0,},
         {"$GMRInstance":"v4","%Name":"inst_6E8C8D5C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E8C8D5C","objectId":{"name":"obj_ShopItem","path":"objects/obj_ShopItem/obj_ShopItem.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":448.0,},
         {"$GMRInstance":"v4","%Name":"inst_72DCE0AC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72DCE0AC","objectId":{"name":"obj_ShopItem","path":"objects/obj_ShopItem/obj_ShopItem.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":448.0,},
+        {"$GMRInstance":"v4","%Name":"inst_22BC0E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22BC0E8","objectId":{"name":"obj_ShopKeep","path":"objects/obj_ShopKeep/obj_ShopKeep.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           -405,-2147483648,1,153,-3,169,1,-2147483648,-3,169,1,150,-33,-2147483648,3,153,171,1,-5,3,3,41,168,150,
           -32,-2147483648,3,118,1,19,-5,39,3,40,41,113,-32,-2147483648,2,118,36,-7,39,2,76,113,-32,-2147483648,
-          4,118,36,39,39,-3,38,-2,39,2,76,113,-32,-2147483648,2,118,36,-7,39,2,76,113,-32,-2147483648,3,118,54,
-          55,-5,39,3,58,94,113,-32,-2147483648,3,99,81,54,-5,92,3,94,78,96,-33,-2147483648,1,99,-3,79,1,-2147483648,
-          -3,79,1,96,-274,-2147483648,
+          2,118,36,-7,39,2,76,113,-32,-2147483648,2,118,36,-7,39,2,76,113,-32,-2147483648,3,118,54,55,-5,39,3,
+          58,94,113,-32,-2147483648,3,99,81,54,-5,92,3,94,78,96,-33,-2147483648,1,99,-3,79,1,-2147483648,-3,79,
+          1,96,-274,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tls_Tileset1","path":"tilesets/tls_Tileset1/tls_Tileset1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           -449,-2147483648,-7,21,-35,-2147483648,-2,21,-5,-2147483648,-2,21,-34,-2147483648,1,21,-7,-2147483648,
