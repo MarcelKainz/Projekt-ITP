@@ -54,4 +54,3 @@ if (point_distance(obj_Player.x, obj_Player.y, x+sprite_width/2, y+sprite_height
 		}
 		
 }
-	
