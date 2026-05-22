@@ -1,4 +1,5 @@
 gml_pragma("MarkTagAsUsed", "treasureSpr");
 
-TreasurePool = ["Speed", "Power", "Health", "Heal"];
+itemPool = ["Speed", "Power", "Health"];
 
+type = "Treasure";
