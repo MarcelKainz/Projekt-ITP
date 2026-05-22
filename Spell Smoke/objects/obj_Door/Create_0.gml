@@ -1,1 +1,1 @@
-open = false;
+stateChanged = false;
