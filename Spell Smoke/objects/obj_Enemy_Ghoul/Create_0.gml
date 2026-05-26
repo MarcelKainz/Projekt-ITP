@@ -1,7 +1,7 @@
 behaviour = Idle; //states: Idle | Attack
 player = instance_find(obj_Player, 0);
 iFrames = 0; //wird 30
-FleeDuration = 0; //wird <Zahl>
+cooldown = 0;
 damageFlash = 0;
 path = path_add();
 
@@ -25,7 +25,11 @@ function Idle() {
 	}
 }
 function Attack() {
-	mp_potential_path(path, player.x, player.y, moveSpeed, 200, false)
+	if(cooldown <= 0) {
+		mp_potential_path(path, player.x, player.y, moveSpeed, 200, false);
+		cooldown = 12;
+	}
+	else cooldown--;
 	path_start(path, moveSpeed, 0, 0)
 	
 	if (point_distance(x, y, player.x, player.y) < 20)
