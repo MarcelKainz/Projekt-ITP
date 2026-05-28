@@ -85,6 +85,8 @@
 		directionLooking = "up";
 	else if (yMove > 0)
 		directionLooking = "down";
+		
+	depth = -y; //wenn spieler vor sachen ist ist er davor, wenn er dahiner ist dahinter
 
 	var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
 	
@@ -107,7 +109,7 @@
 
 	if (mouse_check_button_pressed(mb_left)) && (cooldown < 1)
 	{
-		var bullet = instance_create_layer(x, y, layer, obj_PlayerBullet);
+		var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
 		bullet.owner = id;
 		bullet.damage *= damageMultiplier;
 		cooldown = 30;
