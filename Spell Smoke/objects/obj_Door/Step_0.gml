@@ -10,11 +10,19 @@ else
 		audio_play_sound(sou_Lock, 1, false);
 		sprite_index = spr_Door;
 		stateChanged = true;
+		layer_sprite_create("Instances", x, y - 32, spr_GuidanceArrow)
 	}
 
-	if (point_distance(obj_Player.x, obj_Player.y, door_center_x, door_center_y) <= 40 && keyboard_check_pressed(ord("E")))
+	if (point_distance(obj_Player.x, obj_Player.y, door_center_x, door_center_y) <= 40){
+		EPress(true);
+		if (keyboard_check_pressed(ord("E")))
+		{
+			audio_play_sound(sou_NextRoom, 1, false);
+			RoomLogic();
+		}
+	}
+	else
 	{
-		audio_play_sound(sou_NextRoom, 1, false);
-		RoomLogic();
+		EPress(false);
 	}
 }

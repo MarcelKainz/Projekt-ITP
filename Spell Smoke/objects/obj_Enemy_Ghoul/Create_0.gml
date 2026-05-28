@@ -27,7 +27,7 @@ function Idle() {
 function Attack() {
 	if(cooldown <= 0) {
 		mp_potential_path(path, player.x, player.y, moveSpeed, 200, false);
-		cooldown = 12;
+		cooldown = 5;
 	}
 	else cooldown--;
 	path_start(path, moveSpeed, 0, 0)
