@@ -59,8 +59,8 @@ for (var ix = 1; ix <= room_last; ix ++)
 }
 
 
-hp = 10;
-max_hp = 10;
+hp = 5;
+max_hp = 5;
 xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;
@@ -96,3 +96,7 @@ function GetHit(damage, type) {
 
 
 debug = global.debug;
+
+window_set_cursor(cr_none);
+cursor_sprite = spr_Cursor;
+

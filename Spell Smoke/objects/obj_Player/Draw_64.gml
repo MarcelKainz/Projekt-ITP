@@ -100,7 +100,7 @@
 
 #endregion HealthBar
 #region Door
-	draw_sprite(spr_Door, 0, 32, 68);
+	draw_sprite_ext(spr_Door, 0, 32, 68, 1, 1, 0, c_white, 1);
 
 	if(roomsPassed <= roomsToBoss)
 	{
@@ -124,21 +124,21 @@
 #endregion Door
 #region TreasureMultipliers
 	#region TreasureSpeedMultiplier
-		draw_sprite(spr_TreasureSpeed, 0, 32, 114);
+		draw_sprite_ext(spr_TreasureSpeed, 0, 32, 114, 2, 2, 0, c_white, 1);
 		draw_text(80, 120, string(obj_Player.sprintMultiplier));
 	#endregion TreasureSpeedMultiplier
 	#region TreasurePowerMultiplier
-		draw_sprite(spr_TreasurePower, 0, 32, 146);
+		draw_sprite_ext(spr_TreasurePower, 0, 32, 146, 2, 2, 0, c_white, 1);
 		draw_text(80, 152, string(obj_Player.damageMultiplier));
 	#endregion TreasurePowerMultiplier
 #endregion TreasureMultipliers
 #region DroppedItems
 	#region Keys
-		draw_sprite(spr_Key, 0, 32, 178);
+		draw_sprite_ext(spr_Key, 0, 32, 178, 2, 2, 0, c_white, 1);
 		draw_text(80, 184, string(obj_Player.keys));
 	#endregion Keys
 	#region Bones
-		draw_sprite(spr_Bone, 0, 32, 210);
+		draw_sprite_ext(spr_Bone, 0, 32, 210, 2, 2, 0, c_white, 1);
 		draw_text(80, 216, string(obj_Player.bones));
 	#endregion Bones
 #endregion DroppedItems
