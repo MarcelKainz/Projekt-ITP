@@ -94,6 +94,7 @@
     {"id":{"name":"obj_StartButton","path":"objects/obj_StartButton/obj_StartButton.yy",},},
     {"id":{"name":"obj_VolumeSlider","path":"objects/obj_VolumeSlider/obj_VolumeSlider.yy",},},
     {"id":{"name":"rm_ControlMenu","path":"rooms/rm_ControlMenu/rm_ControlMenu.yy",},},
+    {"id":{"name":"rm_DeathScreen","path":"rooms/rm_DeathScreen/rm_DeathScreen.yy",},},
     {"id":{"name":"rm_DifficultyMenu","path":"rooms/rm_DifficultyMenu/rm_DifficultyMenu.yy",},},
     {"id":{"name":"rm_EntryRoom","path":"rooms/rm_EntryRoom/rm_EntryRoom.yy",},},
     {"id":{"name":"rm_SettingMenu","path":"rooms/rm_SettingMenu/rm_SettingMenu.yy",},},
@@ -201,6 +202,7 @@
     {"roomId":{"name":"rm1_9","path":"rooms/rm1_9/rm1_9.yy",},},
     {"roomId":{"name":"rm1_10","path":"rooms/rm1_10/rm1_10.yy",},},
     {"roomId":{"name":"rm_ControlMenu","path":"rooms/rm_ControlMenu/rm_ControlMenu.yy",},},
+    {"roomId":{"name":"rm_DeathScreen","path":"rooms/rm_DeathScreen/rm_DeathScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

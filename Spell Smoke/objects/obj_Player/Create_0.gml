@@ -91,6 +91,7 @@ function GetHit(damage, type) {
 	
 		if(hp <= 0)
 		{
+			room_goto("rm_DeathScreen");
 			GameLose();
 		}
 //	}

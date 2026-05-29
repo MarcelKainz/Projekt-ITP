@@ -38,16 +38,48 @@ function NextRoomDefault(){
 	{
 		var shopAllowed = false
 	}
-	// raumtyp basierend auf erlaubtem shop auswählen
-	if(shopAllowed == true)
-	{
-		var roomType = round(random(2)+1); //Räume mit shops
-		show_debug_message(string(roomType) + " || shop allowed")
+	
+	//nachsehen ob ein Schatzraum generiert werden darf
+	if (array_length(obj_Player.roomsBeenTo)>=1){
+		if(string_starts_with((obj_Player.roomsBeenTo[array_length(obj_Player.roomsBeenTo)-1]), "rm2")) //wenn der letzte raum ein treasure raum war
+		{
+			var treasureAllowed = false;
+		}
+		else
+		{
+			var treasureAllowed = true;
+		}
 	}
-	else if (shopAllowed == false)
+	else
+		{
+			var treasureAllowed = true;
+		}
+	
+	// raumtyp basierend auf erlaubtem shop auswählen
+	if (treasureAllowed){
+		if(shopAllowed == true)
+		{
+			var roomType = round(random(2)+1); //Gegner, shops, schätze
+		}
+		else if (shopAllowed == false)
+		{
+			var roomType = round(random(2-1)+1); //Gegner, schätze
+		}
+	}
+	else
 	{
-		var roomType = round(random(2-1)+1); //Räume ohne shops
-		show_debug_message(string(roomType) + " || shop not allowed")
+		if(shopAllowed == true)
+		{
+			var roomType = round(random(2)+1); //Gegner, shops
+			if (roomType = 2)
+			{
+				roomType = 3;
+			}
+		}
+		else if (shopAllowed == false)
+		{
+			var roomType = 1; //Gegner
+		}
 	}
 	var roomNrAmount = 0; // an der vorhandenen Raumanzahl des Typs auswürfeln || gerade statisch
 	var tempRoomList = obj_Player.allrooms;
