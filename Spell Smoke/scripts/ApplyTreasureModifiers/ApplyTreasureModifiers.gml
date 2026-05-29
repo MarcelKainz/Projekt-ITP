@@ -7,7 +7,7 @@ function ApplyTreasureModifiers(treasure, type){
   if (obj_ParentTreasure.itemPool[treasure] == "Speed")
     {
       latestItem.statToIncrease = "sprintMultiplier";
-      latestItem.increaseModifier = 0.75;
+      latestItem.increaseModifier = 0.2;
       latestItem.sprite_index = spr_TreasureSpeed;
     }
 
@@ -39,7 +39,7 @@ function ApplyTreasureModifiers(treasure, type){
   if (obj_ParentTreasure.itemPool[treasure] == "Health")
     {
       latestItem.statToIncrease = "max_hp";
-      latestItem.increaseModifier = 2;
+      latestItem.increaseModifier = 1;
       latestItem.sprite_index = spr_TreasureHealth;
     }
 

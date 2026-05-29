@@ -59,8 +59,8 @@ for (var ix = 1; ix <= room_last; ix ++)
 }
 
 
-hp = 5;
-max_hp = 5;
+hp = 3;
+max_hp = 3;
 xSpeed = 0;
 ySpeed = 0;
 maxSpeed = 1.5;

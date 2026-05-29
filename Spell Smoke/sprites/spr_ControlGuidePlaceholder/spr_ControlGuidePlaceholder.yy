@@ -3,7 +3,7 @@
   "%Name":"spr_ControlGuidePlaceholder",
   "bboxMode":0,
   "bbox_bottom":699,
-  "bbox_left":28,
+  "bbox_left":23,
   "bbox_right":997,
   "bbox_top":13,
   "collisionKind":1,

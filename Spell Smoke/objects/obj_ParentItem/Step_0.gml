@@ -37,6 +37,8 @@ if (point_distance(obj_Player.x, obj_Player.y, x+sprite_width/2, y+sprite_height
 {
 	EPress(true);
 	
+	should_show_price = true;
+	
 	if(keyboard_check_pressed(ord("E")))
 	{
 	  if (statToIncrease == "heal" && obj_Player.bones >= price)
@@ -62,4 +64,5 @@ if (point_distance(obj_Player.x, obj_Player.y, x+sprite_width/2, y+sprite_height
 else
 {
 	EPress(false);
+	should_show_price = false;
 }

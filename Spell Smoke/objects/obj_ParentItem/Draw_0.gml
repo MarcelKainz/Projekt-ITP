@@ -6,7 +6,7 @@ draw_set_valign(fa_middle);
 if(price!=0)
 {
 	draw_text_transformed(x+sprite_width/2, y+sprite_height+5, price, textScale, textScale, 0);
-	draw_sprite_ext(spr_Bone, real, x+20, y+sprite_height, 0.5, 0.5, 0, c_white, 1);
+	draw_sprite_ext(spr_Bone, 0, x+20, y+sprite_height, 0.5, 0.5, 0, c_white, 1);
 }
 
 
@@ -14,7 +14,7 @@ if(price!=0)
 	
 		case "sprintMultiplier":
 			name = "Boots of speed";
-			description = $"Grants the user {increaseModifier} more speed";
+			description = $"Grants the user {increaseModifier} more sprint speed";
 		break;
 	
 		case "damageMultiplier":
@@ -40,3 +40,5 @@ if(price!=0)
 
 draw_text_transformed(x+sprite_width/2, y-sprite_height/2-16, name, textScale, textScale, 0);
 draw_text_transformed(x+sprite_width/2, y-sprite_height/2, description, textScale-0.1, textScale-0.1, 0);
+
+
