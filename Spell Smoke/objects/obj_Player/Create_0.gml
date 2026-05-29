@@ -1,5 +1,7 @@
 //Seed();
 
+randomise();
+
 if (!variable_global_exists("seed"))
 {
     global.seed = 0;

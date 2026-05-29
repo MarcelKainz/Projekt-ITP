@@ -84,6 +84,7 @@
     {"id":{"name":"obj_PlayerBullet","path":"objects/obj_PlayerBullet/obj_PlayerBullet.yy",},},
     {"id":{"name":"obj_QuitButton","path":"objects/obj_QuitButton/obj_QuitButton.yy",},},
     {"id":{"name":"obj_ReturnToStartMenu","path":"objects/obj_ReturnToStartMenu/obj_ReturnToStartMenu.yy",},},
+    {"id":{"name":"obj_RNChest","path":"objects/obj_RNChest/obj_RNChest.yy",},},
     {"id":{"name":"obj_SeedInput","path":"objects/obj_SeedInput/obj_SeedInput.yy",},},
     {"id":{"name":"obj_SettingButton","path":"objects/obj_SettingButton/obj_SettingButton.yy",},},
     {"id":{"name":"obj_ShopItem","path":"objects/obj_ShopItem/obj_ShopItem.yy",},},

@@ -30,7 +30,7 @@ function NextRoomBoss(){
 function NextRoomDefault(){
  
 	//nachsehen ob ein shop generiert werden darf
-	if (!array_contains(obj_Player.roomsBeenTo, "rm3_1") && !array_contains(obj_Player.roomsBeenTo, "rm3_2"))
+	if (!array_contains(obj_Player.roomsBeenTo, "rm3_1") && !array_contains(obj_Player.roomsBeenTo, "rm3_2") && obj_Player.roomsPassed >= 5)
 	{
 		var shopAllowed = true;	
 	}
