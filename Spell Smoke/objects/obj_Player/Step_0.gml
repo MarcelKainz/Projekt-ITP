@@ -87,15 +87,6 @@
 		directionLooking = "down";
 
 	var moving = xMove != 0 || yMove != 0 ? "walk_" : "idle_";
-	
-	if(obj_Player.xSpeed > 0)
-		obj_Player.image_speed = obj_Player.xSpeed;
-	if(obj_Player.xSpeed < 0)
-		obj_Player.image_speed = -obj_Player.xSpeed;
-	if(obj_Player.ySpeed > 0)
-		obj_Player.image_speed = obj_Player.ySpeed;
-	if(obj_Player.ySpeed < 0)
-		obj_Player.image_speed = -obj_Player.ySpeed;
 	sprite_index = asset_get_index("spr_Player_" + moving + directionLooking);
 #endregion Sprites
 #region Camera

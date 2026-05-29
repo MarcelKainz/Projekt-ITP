@@ -88,7 +88,7 @@
 	/// ICON
 	/// ----------------------
 	draw_sprite(
-	    spr_Heart,
+	    spr_TreasureHeal,
 	    0,
 	    bar_x - 48,
 	    bar_y - 2
