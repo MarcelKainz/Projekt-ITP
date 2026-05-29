@@ -1,7 +1,7 @@
 #region Movement
 
-	var maxi = keyboard_check(vk_shift) ? maxSpeed * sprintMultiplier : maxSpeed;
-	var acci = keyboard_check(vk_shift) ? accel * sprintMultiplier : accel;
+	var maxi = keyboard_check(buttonSprint) ? maxSpeed * sprintMultiplier : maxSpeed;
+	var acci = keyboard_check(buttonSprint) ? accel * sprintMultiplier : accel;
 	 //ONLY modifying maxSpeed DOES NOT WORK for walking diagnoally, idk why
 	 //ALWAYS buff maxSpeed AND accel
 	#region WASD + ArrowKeys
@@ -9,11 +9,11 @@
 	var yMove = 0;
 
 	/// Horizontal
-	if (keyboard_check(ord("D")))
+	if (keyboard_check(buttonMoveRight))
 	{
 	    xMove = 1;
 	}
-	else if (keyboard_check(ord("A")))
+	else if (keyboard_check(buttonMoveLeft))
 	{
 	    xMove = -1;
 	}
@@ -25,11 +25,11 @@
 	        keyboard_check(vk_left);
 	}
 
-	if (keyboard_check(ord("S")))
+	if (keyboard_check(buttonMoveDown))
 	{
 	    yMove = 1;
 	}
-	else if (keyboard_check(ord("W")))
+	else if (keyboard_check(buttonMoveUp))
 	{
 	    yMove = -1;
 	}
@@ -98,12 +98,12 @@
 #endregion Camera
 #region Shoot
 
-	if (mouse_check_button_pressed(mb_left)) && (cooldown < 1)
+if (mouse_check_button(mb_left)) && (cooldown < 1)
 	{
 		var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
 		bullet.owner = id;
 		bullet.damage *= damageMultiplier;
-		cooldown = 30;
+		cooldown = cooldownTimer;
 	}
 	if(cooldown > 0)
 	{

@@ -36,6 +36,16 @@ if(price!=0)
 			name = "Key";
 			description = "A Key to open locked Chests";
 		break;
+		
+		case "attackSpeed":
+			name = "Elixir of Motivation";
+			description = $"Grants 33% faster attacks";
+		break;
+		
+		case "range":
+			name = "Monarch's monocle";
+			description = $"Increases attack range by {increaseModifier}";
+		break;		
 	}
 
 draw_text_transformed(x+sprite_width/2, y-sprite_height/2-16, name, textScale, textScale, 0);

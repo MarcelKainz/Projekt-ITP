@@ -29,6 +29,16 @@ if (place_meeting(x, y, obj_Player) && price==0)
     {
       obj_Player.keys += increaseModifier;
     }
+	
+	if (statToIncrease == "attackSpeed")
+    {
+      obj_Player.cooldownTimer *= increaseModifier;
+    }
+	
+  if (statToIncrease == "range")
+    {
+      obj_Player.attackRange += increaseModifier;
+    }	
 
   instance_destroy();
 }

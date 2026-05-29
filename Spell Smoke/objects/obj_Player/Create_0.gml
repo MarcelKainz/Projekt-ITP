@@ -73,8 +73,9 @@ iFrames = 0;
 damageFlash = 0;
 
 damageMultiplier = 1;
-cooldown = 30;
-attackRange = 150;
+cooldown = 0;
+cooldownTimer = 30;
+attackRange = 100;
 
 bones = 0;
 keys = 2;
@@ -86,7 +87,7 @@ function GetHit(damage, type) {
 			return;
 		
 		hp -= damage;
-		iFrames = 25;
+		iFrames = 40;
 		damageFlash = 1;
 	
 		if(hp <= 0)
@@ -101,3 +102,9 @@ debug = global.debug;
 
 window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
+
+buttonMoveUp = ord("W");
+buttonMoveLeft = ord("A");
+buttonMoveRight = ord("D");
+buttonMoveDown = ord("S");
+buttonSprint = vk_shift;

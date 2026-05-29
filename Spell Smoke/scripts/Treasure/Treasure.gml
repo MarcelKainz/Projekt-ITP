@@ -42,8 +42,25 @@ function ApplyTreasureModifiers(treasure, type){
       latestItem.increaseModifier = 1;
       latestItem.sprite_index = spr_TreasureHealth;
     }
+	
+	
+	if (obj_ParentTreasure.itemPool[treasure] == "AttackSpeed")
+    {
+      latestItem.statToIncrease = "attackSpeed";
+      latestItem.increaseModifier = 0.66;
+      latestItem.sprite_index = spr_TreasureAttackSpeed;
+    }
+	
+  if (obj_ParentTreasure.itemPool[treasure] == "Range")
+    {
+      latestItem.statToIncrease = "range";
+      latestItem.increaseModifier = 50;
+      latestItem.sprite_index = spr_TreasureRange;
+    }	
 
   }
+  
+
 
 
 
@@ -60,7 +77,7 @@ function ApplyTreasureModifiers(treasure, type){
           latestItem.price = 6;
             break;
 
-            case "middle":
+            case "medium":
           latestItem.price = 12;
             break;
 
@@ -81,7 +98,7 @@ function ApplyTreasureModifiers(treasure, type){
           latestItem.price = 4;
             break;
 
-            case "middle":
+            case "medium":
           latestItem.price = 8;
             break;
 
