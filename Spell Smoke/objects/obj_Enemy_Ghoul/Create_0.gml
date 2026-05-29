@@ -1,9 +1,20 @@
 behaviour = Idle; //states: Idle | Attack
 player = instance_find(obj_Player, 0);
-iFrames = 0; //wird 30
+iFrames = 0; //wird 25
 cooldown = 0;
 damageFlash = 0;
 path = path_add();
+
+switch (player.difficulty) { //scale stats based on difficulty
+	case "easy" : break;
+	case "middle" : hp *= 1.5; break;
+	case "hard" : damage *= 2; hp *= 3; break;
+}
+if (player.endlessMode) //scale stats based on Room
+{
+	hp *= max(floor(player.roomsPassed / 10), 1);
+	damage *= max(floor(player.roomsPassed / 10), 1);
+}
 
 function GetHit(atk) {
 	hp -= atk.damage;
@@ -11,7 +22,7 @@ function GetHit(atk) {
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);
-	instance_destroy(atk);
+	atk.Hit(true);
 	
 	if (hp <= 0)
 		instance_destroy();

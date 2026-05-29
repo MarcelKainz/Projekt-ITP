@@ -19,7 +19,7 @@ else
 gml_pragma("MarkTagAsUsed", "playerSpr");
 
 endlessMode = false;
-difficulty = "";
+difficulty = ""; //easy, middle, hard
 
 if (global.endlessmode)
 {
@@ -30,15 +30,15 @@ else
     switch (global.difficulty)
     {
         case "easy":
-            roomsToBoss = 10;
-        break;
-
-        case "middle":
             roomsToBoss = 15;
         break;
 
+        case "middle":
+            roomsToBoss = 25;
+        break;
+
         case "hard":
-            roomsToBoss = 20;
+            roomsToBoss = 30;
         break;
     }
 }

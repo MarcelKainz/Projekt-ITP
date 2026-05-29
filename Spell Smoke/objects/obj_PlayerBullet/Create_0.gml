@@ -7,3 +7,7 @@
 	startingDistanceX = x;
 	startingDistanceY = y;
 #endregion
+
+function Hit(enemy) {
+	instance_destroy();
+}

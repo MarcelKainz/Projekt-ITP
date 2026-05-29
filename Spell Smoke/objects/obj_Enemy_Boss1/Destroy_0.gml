@@ -1,1 +1,0 @@
-show_message("Oh no, I, the sucker, ate that, good witch!")
