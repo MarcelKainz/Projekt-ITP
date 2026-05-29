@@ -4,6 +4,7 @@ var treasure_center_y = y - sprite_height * 0.5;
 if (point_distance(obj_Player.x, obj_Player.y, treasure_center_x, treasure_center_y) <= 40 && obj_Player.keys >= 1)
 {
 	EPress(true);
+	should_show_price = true;
 		
 	if (keyboard_check_pressed(ord("E")))
 	{
@@ -18,4 +19,5 @@ if (point_distance(obj_Player.x, obj_Player.y, treasure_center_x, treasure_cente
 	else
 	{
 		EPress(false);
+		should_show_price = false;
 	}

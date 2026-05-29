@@ -1,8 +1,9 @@
-var statToIncrease;
-var increaseModifier;
+statToIncrease = "";
+increaseModifier = 0;
 price = 0;
 my_prompt = noone;
 name = "";
 description = "";
 textScale = 0.4;
 depth = -99;
+should_show_price = false;
