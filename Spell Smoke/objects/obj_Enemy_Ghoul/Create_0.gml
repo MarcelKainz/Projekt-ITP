@@ -21,7 +21,7 @@ if (player.endlessMode) //scale stats based on Room
 #endregion
 function GetHit(atk) {
 	hp -= atk.damage;
-	iFrames = 25;
+	//iFrames = 25;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);

@@ -38,8 +38,8 @@ if(price!=0)
 		break;
 		
 		case "attackSpeed":
-			name = "Elixir of Motivation";
-			description = $"Grants 33% faster attacks";
+			name = "Diploma of the mages";
+			description = $"Allows for 30% faster cast spells";
 		break;
 		
 		case "range":
