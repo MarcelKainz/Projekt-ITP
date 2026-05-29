@@ -1,3 +1,10 @@
 event_inherited();
 
-endlessmode = false;
+if(!global.endlessmode)
+{
+	endlessmode = false;
+}
+else
+{
+	endlessmode = true;	
+}
