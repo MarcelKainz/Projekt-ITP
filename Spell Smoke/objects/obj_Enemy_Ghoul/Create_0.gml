@@ -27,7 +27,7 @@ function Idle() {
 }
 function Attack() {
 	if(cooldown <= 0) {
-		mp_potential_path(path, player.x, player.y, moveSpeed, 200, false);
+		mp_grid_path(global.grid, path, x, y, player.x, player.y, true);
 		cooldown = 5;
 	}
 	else cooldown--;
