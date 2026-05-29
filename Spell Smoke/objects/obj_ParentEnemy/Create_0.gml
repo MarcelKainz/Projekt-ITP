@@ -4,7 +4,7 @@ damageFlash = 0;
 
 function GetHit(atk) {
 	hp -= atk.damage;
-	iFrames = 30;
+	iFrames = 25;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);

@@ -9,7 +9,10 @@
     "name":"Shop",
     "path":"folders/Objects/Environment/Shop.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentSolid",
+    "path":"objects/obj_ParentSolid/obj_ParentSolid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

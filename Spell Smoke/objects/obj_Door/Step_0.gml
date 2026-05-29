@@ -18,7 +18,10 @@ else
 		if (keyboard_check_pressed(ord("E")))
 		{
 			audio_play_sound(sou_NextRoom, 1, false);
-			RoomLogic();
+			if (fixedRoom != noone) {
+				room_goto(roomID);
+				obj_Player.roomsPassed++;
+			} else RoomLogic(); //basically Always
 		}
 	}
 	else

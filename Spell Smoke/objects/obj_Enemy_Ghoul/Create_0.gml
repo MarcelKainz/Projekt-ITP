@@ -5,6 +5,9 @@ cooldown = 0;
 damageFlash = 0;
 path = path_add();
 
+itemPool = ["Heal", "Key"]
+
+#region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
 	case "middle" : hp *= 1.5; break;
@@ -15,7 +18,7 @@ if (player.endlessMode) //scale stats based on Room
 	hp *= max(floor(player.roomsPassed / 10), 1);
 	damage *= max(floor(player.roomsPassed / 10), 1);
 }
-
+#endregion
 function GetHit(atk) {
 	hp -= atk.damage;
 	iFrames = 25;
