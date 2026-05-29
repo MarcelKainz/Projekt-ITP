@@ -6,3 +6,6 @@ shader_set_uniform_f(uFlash, damageFlash);
 draw_self();
 
 shader_reset();
+
+
+

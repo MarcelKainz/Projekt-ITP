@@ -7,7 +7,7 @@ path = path_add();
 
 function GetHit(atk) {
 	hp -= atk.damage;
-	iFrames = 30;
+	iFrames = 25;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);
@@ -21,13 +21,14 @@ function GetHit(atk) {
 function Idle() {
 	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
 	{
-		behaviour = Attack;//then attack //danke
+		mp_potential_settings(80, 10, 10, true)
+		behaviour = Attack;//then attack
 	}
 }
 function Attack() {
 	if(cooldown <= 0) {
 		mp_potential_path(path, player.x, player.y, moveSpeed, 200, false);
-		cooldown = 12;
+		cooldown = 5;
 	}
 	else cooldown--;
 	path_start(path, moveSpeed, 0, 0)
@@ -37,8 +38,5 @@ function Attack() {
 }
 function Hit() {
 	player.GetHit(damage, dmgType);
-}
-function Flee() {
-	//...
 }
 #endregion

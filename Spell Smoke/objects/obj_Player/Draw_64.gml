@@ -143,8 +143,6 @@
 	#endregion Bones
 #endregion DroppedItems
 #region Debug
-	draw_text(1080, 20, "Seed: " + string(random_get_seed()));
-	
 	if(debug == true)
 	{
 		draw_text(1080, 40, "X: " + string(obj_Player.x));

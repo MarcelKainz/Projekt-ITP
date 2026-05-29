@@ -18,7 +18,7 @@ function GetHit(atk) {
 	} else if (prevHp > 25 && hp <= 25){
 		damageFlash = 5;
 	} else
-		iFrames = 50;
+		iFrames = 25;
 	
 	damageFlash++;
 	if (hp <= 0)

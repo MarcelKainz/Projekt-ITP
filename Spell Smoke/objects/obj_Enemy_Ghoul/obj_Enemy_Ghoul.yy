@@ -8,6 +8,7 @@
   "name":"obj_Enemy_Ghoul",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"propertyId":{"name":"hp","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"propertyId":{"name":"moveSpeed","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"Enemies",
