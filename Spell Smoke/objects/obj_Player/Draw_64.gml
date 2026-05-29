@@ -87,12 +87,7 @@
 	/// ----------------------
 	/// ICON
 	/// ----------------------
-	draw_sprite(
-	    spr_TreasureHeal,
-	    0,
-	    bar_x - 48,
-	    bar_y - 2
-	);
+	draw_sprite(spr_TreasureHealth, 0, bar_x - 48, bar_y - 2);
 
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);

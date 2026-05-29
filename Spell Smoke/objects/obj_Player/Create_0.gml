@@ -35,7 +35,7 @@ else
             roomsToBoss = 15;
         break;
 
-        case "middle":
+        case "medium":
             roomsToBoss = 25;
         break;
 
@@ -91,7 +91,6 @@ function GetHit(damage, type) {
 	
 		if(hp <= 0)
 		{
-			room_goto("rm_DeathScreen");
 			GameLose();
 		}
 //	}
@@ -102,4 +101,3 @@ debug = global.debug;
 
 window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
-

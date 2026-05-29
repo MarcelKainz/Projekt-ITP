@@ -1,3 +1,3 @@
 event_inherited();
 
-DifficultyMode("middle");
+DifficultyMode("medium");

@@ -97,9 +97,6 @@ function NextRoomDefault(){
 	var roomName = "rm" + string(roomType) + "_" + string(roomNr);
 	var roomID = asset_get_index(roomName);
 
- 
-	show_debug_message(roomName)
-	show_debug_message(obj_Player.roomsBeenTo)
 
 	// räume die nicht gerade erst waren laden
 	if (!array_contains(obj_Player.roomsBeenTo, roomName))
