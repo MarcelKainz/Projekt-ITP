@@ -10,7 +10,7 @@ draw_rectangle(
 // Knopf
 draw_circle(
     x + knob_x,
-    y + slider_height / 2,
+    y + global.volume / 2,
     15,
     false
 );
