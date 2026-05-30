@@ -1,1 +1,1 @@
-cursor_sprite = cr_default;
+window_set_cursor(cr_default);

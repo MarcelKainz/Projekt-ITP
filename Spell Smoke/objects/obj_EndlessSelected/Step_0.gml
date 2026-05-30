@@ -4,5 +4,5 @@ if (endlessActivated == true)
 }
 else
 {
-	sprite_index = false;
+	sprite_index = noone;
 }

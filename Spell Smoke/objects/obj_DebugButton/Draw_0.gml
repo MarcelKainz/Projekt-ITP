@@ -1,3 +1,5 @@
+event_inherited();
+
 if(debug){
 	sprite_index = spr_DebugModeSelected;
 }
@@ -8,4 +10,4 @@ else
 }
 
 draw_self();
-draw_text(x-48, y-100, "Debug Mode");
+draw_text(x+128, y, "Debug Mode");
