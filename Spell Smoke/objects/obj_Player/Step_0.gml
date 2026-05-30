@@ -98,7 +98,7 @@
 #endregion Camera
 #region Shoot
 
-if (mouse_check_button(mb_left)) && (cooldown < 1)
+if (mouse_check_button_pressed(mb_left)) && (cooldown < 1)
 	{
 		var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
 		bullet.owner = id;
