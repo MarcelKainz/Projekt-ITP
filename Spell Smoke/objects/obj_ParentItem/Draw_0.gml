@@ -39,7 +39,7 @@ if(price!=0)
 		
 		case "attackSpeed":
 			name = "Diploma of the mages";
-			description = $"Allows for 30% faster cast spells";
+			description = $"Allows for {(1-increaseModifier)*100}% faster cast spells";
 		break;
 		
 		case "range":

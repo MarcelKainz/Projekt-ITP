@@ -47,7 +47,20 @@ function ApplyTreasureModifiers(treasure, type){
 	if (obj_ParentTreasure.itemPool[treasure] == "AttackSpeed")
     {
       latestItem.statToIncrease = "attackSpeed";
-      latestItem.increaseModifier = 0.7;
+            switch (global.difficulty)
+        {
+            case "easy":
+          latestItem.increaseModifier = 0.7;
+            break;
+
+            case "middle":
+          latestItem.increaseModifier = 0.8;
+            break;
+
+            case "hard":
+          latestItem.increaseModifier = 0.9;
+            break;
+        }
       latestItem.sprite_index = spr_TreasureAttackSpeed;
     }
 	
