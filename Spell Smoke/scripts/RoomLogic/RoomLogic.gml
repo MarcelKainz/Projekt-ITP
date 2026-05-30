@@ -1,5 +1,11 @@
 // prüft ob es Zeit für einen Bossraum ist, wenn nicht wird ein normaler Raum generiert
 function RoomLogic(){
+	
+	if(obj_Player.roomsPassed == 100)
+		{
+			array_push(global.difficultyCompleted, $"{global.difficulty}Endless");
+		}
+	
 	if(obj_Player.roomsToBoss < obj_Player.roomsPassed)
 		{
 			GameWin();
