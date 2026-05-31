@@ -123,3 +123,32 @@ if(keyboard_check_pressed(vk_enter))
 {
 	export_json("", "");
 }
+
+
+
+#region Achievements
+if (bones >= 100)
+{
+	array_push(global.difficultyCompleted, "rich")
+}
+
+if (damageMultiplier >= 5)
+{
+	array_push(global.difficultyCompleted, "power")
+}
+
+if (sprintMultiplier >= 2)
+{
+	array_push(global.difficultyCompleted, "speed")
+}
+
+if (max_hp >= 10)
+{
+	array_push(global.difficultyCompleted, "tank")
+}
+
+if (max_hp >= 10)
+{
+	array_push(global.difficultyCompleted, "tank")
+}
+#endregion Achievements

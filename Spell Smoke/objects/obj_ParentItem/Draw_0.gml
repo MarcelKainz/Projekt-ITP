@@ -13,12 +13,12 @@ if(price!=0)
 	switch(statToIncrease){
 	
 		case "sprintMultiplier":
-			name = "Boots of speed";
+			name = "Boots of Speed";
 			description = $"Grants the user {increaseModifier} more sprint speed";
 		break;
 	
 		case "damageMultiplier":
-			name = "Relic of strength";
+			name = "Relic of Strength";
 			description = $"Grants the user {increaseModifier} more strength";
 		break;
 	
@@ -31,6 +31,11 @@ if(price!=0)
 			name = "Healing Potion";
 			description = $"Restores {increaseModifier} health";
 		break;
+		
+		case "greaterHeal":
+			name = "Greater Healing Potion";
+			description = $"Restores {increaseModifier} health";
+		break;
 	
 		case "key":
 			name = "Key";
@@ -38,12 +43,12 @@ if(price!=0)
 		break;
 		
 		case "attackSpeed":
-			name = "Diploma of the mages";
+			name = "Diploma of the Mages";
 			description = $"Allows for {(1-increaseModifier)*100}% faster cast spells";
 		break;
 		
 		case "range":
-			name = "Monarch's monocle";
+			name = "Monarch's Monocle";
 			description = $"Increases attack range by {increaseModifier}";
 		break;		
 	}

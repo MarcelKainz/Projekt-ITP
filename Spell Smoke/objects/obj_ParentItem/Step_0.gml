@@ -60,6 +60,16 @@ if (point_distance(obj_Player.x, obj_Player.y, x+sprite_width/2, y+sprite_height
 		  EPress(false);
 	      instance_destroy();
 	    }
+		
+	if (statToIncrease == "greaterHeal" && obj_Player.bones >= price)
+	    {
+	      obj_Player.hp += increaseModifier;
+	      obj_Player.hp = clamp(obj_Player.hp, 0, obj_Player.max_hp)
+	      obj_Player.bones -= price;
+	      audio_play_sound(sou_ItemPickup, 1, false);
+		  EPress(false);
+	      instance_destroy();
+	    }
 
 	  if (statToIncrease == "key" && obj_Player.bones >= price)
 	    {

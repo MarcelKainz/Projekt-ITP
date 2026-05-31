@@ -1,3 +1,3 @@
 event_inherited();
 
-room_goto(rm_AchievementMenu);
+room_goto(rm_AchievementMenu1);

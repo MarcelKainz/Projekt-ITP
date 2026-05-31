@@ -22,7 +22,7 @@ function ApplyTreasureModifiers(treasure, type){
           latestItem.increaseModifier = 1;
             break;
 
-            case "middle":
+            case "medium":
           latestItem.increaseModifier = 0.75;
             break;
 
@@ -53,7 +53,7 @@ function ApplyTreasureModifiers(treasure, type){
           latestItem.increaseModifier = 0.7;
             break;
 
-            case "middle":
+            case "medium":
           latestItem.increaseModifier = 0.8;
             break;
 
@@ -82,20 +82,41 @@ function ApplyTreasureModifiers(treasure, type){
   if (obj_ShopItem.itemPool[treasure] == "Heal")
     {
       latestItem.statToIncrease = "heal";
-      latestItem.increaseModifier = 2;
+      latestItem.increaseModifier = 1;
       latestItem.sprite_index = spr_TreasureHeal;
       switch (global.difficulty)
         {
             case "easy":
-          latestItem.price = 6;
+          latestItem.price = 5;
             break;
 
             case "medium":
-          latestItem.price = 12;
+          latestItem.price = 10;
             break;
 
             case "hard":
-          latestItem.price = 18;
+          latestItem.price = 15;
+            break;
+        }
+    }
+	
+	if (obj_ShopItem.itemPool[treasure] == "GreaterHeal")
+    {
+      latestItem.statToIncrease = "greaterHeal";
+      latestItem.increaseModifier = 3;
+      latestItem.sprite_index = spr_TreasureGreaterHeal;
+      switch (global.difficulty)
+        {
+            case "easy":
+          latestItem.price = 10;
+            break;
+
+            case "medium":
+          latestItem.price = 20;
+            break;
+
+            case "hard":
+          latestItem.price = 30;
             break;
         }
     }
