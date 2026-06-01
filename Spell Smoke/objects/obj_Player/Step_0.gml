@@ -98,7 +98,7 @@
 #endregion Camera
 #region Shoot
 
-if (mouse_check_button_pressed(mb_left)) && (cooldown < 1)
+if (mouse_check_button(mb_left)) && (cooldown < 1)
 	{
 		var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
 		bullet.owner = id;
@@ -127,28 +127,33 @@ if(keyboard_check_pressed(vk_enter))
 
 
 #region Achievements
-if (bones >= 100)
+if (bones >= 100 && !array_contains(global.difficultyCompleted, "rich"))
 {
 	array_push(global.difficultyCompleted, "rich")
 }
 
-if (damageMultiplier >= 5)
+if (damageMultiplier >= 5 && !array_contains(global.difficultyCompleted, "power"))
 {
 	array_push(global.difficultyCompleted, "power")
 }
 
-if (sprintMultiplier >= 2)
+if (sprintMultiplier >= 2.5 && !array_contains(global.difficultyCompleted, "speed"))
 {
 	array_push(global.difficultyCompleted, "speed")
 }
 
-if (max_hp >= 10)
+if (max_hp >= 10 && !array_contains(global.difficultyCompleted, "tank"))
 {
 	array_push(global.difficultyCompleted, "tank")
 }
 
-if (max_hp >= 10)
+if (attackRange >= 350 && !array_contains(global.difficultyCompleted, "sniper"))
 {
-	array_push(global.difficultyCompleted, "tank")
+	array_push(global.difficultyCompleted, "sniper")
+}
+
+if (cooldown <= 15 && !array_contains(global.difficultyCompleted, "rapidFire"))
+{
+	array_push(global.difficultyCompleted, "rapidFire")
 }
 #endregion Achievements
