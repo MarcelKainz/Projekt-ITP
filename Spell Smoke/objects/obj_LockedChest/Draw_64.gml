@@ -3,5 +3,5 @@ draw_set_valign(fa_middle);
 
 if (should_show_price) 
 {
-	draw_text(120, 192, $"(-1)");
+	draw_text(120, 256, $"(-1)");
 }

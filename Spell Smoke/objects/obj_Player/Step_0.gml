@@ -62,7 +62,6 @@
 	
 	if(sprintMultiplier >= 3.5)
 	{
-		sprintMultiplier = 3.5;
 		move_and_collide(xSpeed*1.5, ySpeed*1.5, obj_ParentSolid)
 	}
 	else
@@ -152,8 +151,14 @@ if (attackRange >= 350 && !array_contains(global.difficultyCompleted, "sniper"))
 	array_push(global.difficultyCompleted, "sniper")
 }
 
-if (cooldown <= 15 && !array_contains(global.difficultyCompleted, "rapidFire"))
+if (cooldownTimer <= 15 && !array_contains(global.difficultyCompleted, "rapidFire"))
 {
 	array_push(global.difficultyCompleted, "rapidFire")
 }
 #endregion Achievements
+
+
+if(keyboard_check(vk_escape))
+{
+	GameLose();
+}
