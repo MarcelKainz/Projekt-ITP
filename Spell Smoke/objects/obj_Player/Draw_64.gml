@@ -126,15 +126,20 @@
 		draw_sprite_ext(spr_TreasurePower, 0, 32, 146, 2, 2, 0, c_white, 1);
 		draw_text(80, 152, string(obj_Player.damageMultiplier));
 	#endregion TreasurePowerMultiplier
+		draw_sprite_ext(spr_TreasureAttackSpeed, 0, 32, 178, 2, 2, 0, c_white, 1);
+		draw_text(80, 184, string(obj_Player.cooldownTimer));
+		
+		draw_sprite_ext(spr_TreasureRange, 0, 32, 210, 2, 2, 0, c_white, 1);
+		draw_text(80, 216, string(obj_Player.attackRange));
 #endregion TreasureMultipliers
 #region DroppedItems
 	#region Keys
-		draw_sprite_ext(spr_Key, 0, 32, 178, 2, 2, 0, c_white, 1);
-		draw_text(80, 184, string(obj_Player.keys));
+		draw_sprite_ext(spr_Key, 0, 32, 242, 2, 2, 0, c_white, 1);
+		draw_text(80, 248, string(obj_Player.keys));
 	#endregion Keys
 	#region Bones
-		draw_sprite_ext(spr_Bone, 0, 32, 210, 2, 2, 0, c_white, 1);
-		draw_text(80, 216, string(obj_Player.bones));
+		draw_sprite_ext(spr_Bone, 0, 32, 276, 2, 2, 0, c_white, 1);
+		draw_text(80, 280, string(obj_Player.bones));
 	#endregion Bones
 #endregion DroppedItems
 #region Debug
