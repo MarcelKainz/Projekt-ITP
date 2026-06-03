@@ -7,6 +7,7 @@ function GameWin(){
 	{
 		array_push(global.difficultyCompleted, global.difficulty);
 	}
+	
 	room_goto(startMenu);	
 }
 

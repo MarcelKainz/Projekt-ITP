@@ -10,6 +10,8 @@ function GetHit(atk) {
 	audio_play_sound(sou_Hit, 1, false);
 	instance_destroy(atk);
 	
+	behaviour = Attack;
+	
 	if (hp <= 0)
 		instance_destroy();
 }
@@ -18,8 +20,5 @@ function Idle() {
 	//...	
 }
 function Attack() {
-	//...
-}
-function Flee() {
 	//...
 }

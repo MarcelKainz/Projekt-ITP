@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"SaveTheGame",
+  "%Name":"Saving",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"SaveTheGame",
+  "name":"Saving",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
