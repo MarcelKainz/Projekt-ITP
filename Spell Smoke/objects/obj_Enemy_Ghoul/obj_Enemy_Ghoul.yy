@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ghoul_walk_down",
-    "path":"sprites/spr_Ghoul_walk_down/spr_Ghoul_walk_down.yy",
+    "name":"spr_Ghoul_idle",
+    "path":"sprites/spr_Ghoul_idle/spr_Ghoul_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
