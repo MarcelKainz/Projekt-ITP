@@ -23,7 +23,7 @@
   ],
   "name":"spr_Ghoul_walk_down",
   "nineSlice":null,
-  "origin":9,
+  "origin":4,
   "parent":{
     "name":"ghoul",
     "path":"folders/Sprites/enemies/ghoul.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":12,
-    "yorigin":15,
+    "yorigin":14,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

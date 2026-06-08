@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Achievements",
+  "%Name":"obj_Enemy_Wraith",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Achievements",
+  "name":"obj_Enemy_Wraith",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentEnemy",
+    "path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Wraith_idle_down",
+    "path":"sprites/spr_Wraith_idle_down/spr_Wraith_idle_down.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

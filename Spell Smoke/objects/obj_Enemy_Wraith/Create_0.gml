@@ -1,9 +1,11 @@
 behaviour = Idle; //states: Idle | Attack
-player = instance_find(obj_Player, 0);
 iFrames = 0; //wird 25
 cooldown = 0;
 damageFlash = 0;
+shootCooldown = 50;
+
 path = path_add();
+player = instance_find(obj_Player, 0);
 
 itemPool = ["Heal", "Key"]
 
@@ -33,9 +35,8 @@ function GetHit(atk) {
 		instance_destroy();
 }
 
-#region behaviours
 function Idle() {
-	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
+	if (point_distance(x, y, player.x, player.y) < 350) //stand still till Player is near
 	{
 		mp_potential_settings(80, 10, 10, true)
 		behaviour = Attack;//then attack
@@ -47,12 +48,29 @@ function Attack() {
 		cooldown = 5;
 	}
 	else cooldown--;
-	path_start(path, moveSpeed, 0, 0)
 	
-	if (point_distance(x, y, player.x, player.y) < 20)
-		Hit();
+	var playerDistance = point_distance(x, y, player.x, player.y)
+	lineOfSight = collision_line(x, y, player.x, player.y, obj_ParentSolid, false, true);
+	
+	var walk;
+	if (playerDistance > 200 || lineOfSight != noone)
+		walk = path;
+	else
+		walk = path_add();
+	path_start(walk, moveSpeed, 0, 0)
+	
+	if (playerDistance < 230 && shootCooldown <= 0 && lineOfSight == noone)
+		Shoot();
+	else
+	 shootCooldown--;
 }
-function Hit() {
-	player.GetHit(damage, dmgType);
+function Shoot() {
+	var bullet = instance_create_layer(x, y, "Instances", obj_simpleBullet);
+	bullet.direction = point_direction(x, y, player.x, player.y);
+	bullet.speed = 8;
+	bullet.image_angle = bullet.direction;
+	bullet.hitPlayer = true;
+	
+	bullet.dmgType = ["force", "necrotic"];
+	shootCooldown = 70;
 }
-#endregion

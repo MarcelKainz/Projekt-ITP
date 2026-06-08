@@ -73,8 +73,8 @@ iFrames = 0;
 damageFlash = 0;
 
 damageMultiplier = 1;
-cooldown = 0;
-cooldownTimer = 30;
+cooldown = 30; //current Cooldown
+cooldownTimer = 30;  //max Cooldown
 attackRange = 100;
 
 bones = 0;
