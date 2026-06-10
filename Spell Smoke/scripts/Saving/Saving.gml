@@ -31,13 +31,14 @@ function SaveAchievements(_file, achievements){ //array of achievements, called 
 function LoadAchievements(_file, achievements){
 	if (!file_exists(_file))
 		return;
+	
 	fil = file_text_open_read(_file);
 	while (!file_text_eof(fil)) { //while not end of file
 		var line = file_text_read_string(fil)
 		//show_message(line);
-		if (!array_contains(achievements, line))
+		if (!array_contains(achievements, line) && line != "")
 			array_push(achievements, line); //read input
-		file_text_readln(fil); //next line
+		file_text_readln(fil);
 	}
 	file_text_close(fil);
 }
