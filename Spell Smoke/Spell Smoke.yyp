@@ -56,7 +56,6 @@
   },
   "name":"Spell Smoke",
   "resources":[
-    {"id":{"name":"obj_Achievements","path":"objects/obj_Achievements/obj_Achievements.yy",},},
     {"id":{"name":"obj_AchievementsButton","path":"objects/obj_AchievementsButton/obj_AchievementsButton.yy",},},
     {"id":{"name":"obj_Bone","path":"objects/obj_Bone/obj_Bone.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},

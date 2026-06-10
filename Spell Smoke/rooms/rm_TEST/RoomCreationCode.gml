@@ -1,0 +1,1 @@
+array_push(global.difficultyCompleted, "easy");
