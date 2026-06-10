@@ -21,7 +21,7 @@ function export_json(str, _file) {
 
 function SaveAchievements(_file, achievements){ //array of achievements, called in rm_StartMenu creation
 	fil = file_text_open_write(_file);
-	for (i = 0; i < array_length(achievements); i++) {
+	for (var i = 0; i < array_length(achievements); i++) {
 		file_text_write_string(fil, achievements[i]);
 		file_text_writeln(fil); //next line
 	}
@@ -29,14 +29,15 @@ function SaveAchievements(_file, achievements){ //array of achievements, called 
 }
 
 function LoadAchievements(_file, achievements){
+	if (!file_exists(_file))
+		return;
 	fil = file_text_open_read(_file);
-	/*var output = [];
 	while (!file_text_eof(fil)) { //while not end of file
-		array_push(output, file_text_read_string(fil)); //read input
+		var line = file_text_read_string(fil)
+		//show_message(line);
+		if (!array_contains(achievements, line))
+			array_push(achievements, line); //read input
 		file_text_readln(fil); //next line
 	}
-	achievements = output;*/
-	show_message(file_text_read_string(fil));
-	show_message(file_text_read_string(fil));
 	file_text_close(fil);
 }

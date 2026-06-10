@@ -35,9 +35,13 @@ function GetHit(atk) {
 
 #region behaviours
 function Idle() {
+	if (random(1) < 0.01)
+		image_index++;
+	
 	if (point_distance(x, y, player.x, player.y) < 200) //stand still till Player is near
 	{
 		mp_potential_settings(80, 10, 10, true)
+		sprite_index = spr_Ghoul_run;
 		behaviour = Attack;//then attack
 	}
 }
@@ -48,6 +52,11 @@ function Attack() {
 	}
 	else cooldown--;
 	path_start(path, moveSpeed, 0, 0)
+	
+	if (player.x > x)
+		image_xscale = -1;
+	if (player.x < x)
+		image_xscale = 1;
 	
 	if (point_distance(x, y, player.x, player.y) < 20)
 		Hit();
