@@ -196,6 +196,7 @@
 		}
 		draw_text(1080, 280, "RoomsPassed: " + string(obj_Player.roomsPassed));
 		draw_text(1080, 300, "RoomsToBoss: " + string(obj_Player.roomsToBoss));
+		draw_text(1080, 320, "GetTime: " + string(get_timer()));
 		draw_text(0, 700, "Achievement: " + string(global.difficultyCompleted)) 
 	}
 #endregion Debug
