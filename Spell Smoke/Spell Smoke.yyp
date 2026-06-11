@@ -52,7 +52,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Spell Smoke",
   "resources":[
@@ -143,7 +143,7 @@
     {"id":{"name":"spr_Achievements","path":"sprites/spr_Achievements/spr_Achievements.yy",},},
     {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},},
     {"id":{"name":"spr_Bone","path":"sprites/spr_Bone/spr_Bone.yy",},},
-    {"id":{"name":"spr_Boss1_idle_down","path":"sprites/spr_Boss1_idle_down/spr_Boss1_idle_down.yy",},},
+    {"id":{"name":"spr_Boss_idle","path":"sprites/spr_Boss_idle/spr_Boss_idle.yy",},},
     {"id":{"name":"spr_bulletBall","path":"sprites/spr_bulletBall/spr_bulletBall.yy",},},
     {"id":{"name":"spr_bulletBallGreen","path":"sprites/spr_bulletBallGreen/spr_bulletBallGreen.yy",},},
     {"id":{"name":"spr_ChestLocked","path":"sprites/spr_ChestLocked/spr_ChestLocked.yy",},},
@@ -188,6 +188,7 @@
     {"id":{"name":"spr_SeedField","path":"sprites/spr_SeedField/spr_SeedField.yy",},},
     {"id":{"name":"spr_SettingButton","path":"sprites/spr_SettingButton/spr_SettingButton.yy",},},
     {"id":{"name":"spr_ShopKeep","path":"sprites/spr_ShopKeep/spr_ShopKeep.yy",},},
+    {"id":{"name":"spr_sludgeBullet","path":"sprites/spr_sludgeBullet/spr_sludgeBullet.yy",},},
     {"id":{"name":"spr_SoundButton","path":"sprites/spr_SoundButton/spr_SoundButton.yy",},},
     {"id":{"name":"spr_StartButton","path":"sprites/spr_StartButton/spr_StartButton.yy",},},
     {"id":{"name":"spr_Tileset1","path":"sprites/spr_Tileset1/spr_Tileset1.yy",},},
