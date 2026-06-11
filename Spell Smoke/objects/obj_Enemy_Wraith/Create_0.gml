@@ -70,7 +70,7 @@ function Shoot() {
 	bullet.speed = 5;
 	bullet.image_angle = bullet.direction;
 	bullet.hitPlayer = true;
-	
+	bullet.damage = damage;
 	bullet.dmgType = ["force", "necrotic"];
 	shootCooldown = 70;
 }

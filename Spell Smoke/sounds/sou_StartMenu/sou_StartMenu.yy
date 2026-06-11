@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":5512,
   "soundFile":"sou_StartMenu.mp3",
-  "volume":0.4,
+  "volume":1.0,
 }
