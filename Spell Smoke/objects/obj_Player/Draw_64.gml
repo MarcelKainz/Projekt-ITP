@@ -120,17 +120,17 @@
 #region TreasureMultipliers
 	#region TreasureSpeedMultiplier
 		draw_sprite_ext(spr_TreasureSpeed, 0, 32, 114, 2, 2, 0, c_white, 1);
-		draw_text(80, 120, string(obj_Player.sprintMultiplier));
+		draw_text(80, 120, string(obj_Player.sprintMultiplier/1.25*100) + "%");
 	#endregion TreasureSpeedMultiplier
 	#region TreasurePowerMultiplier
 		draw_sprite_ext(spr_TreasurePower, 0, 32, 146, 2, 2, 0, c_white, 1);
-		draw_text(80, 152, string(obj_Player.damageMultiplier));
+		draw_text(80, 152, string(obj_Player.damageMultiplier*100) + "%");
 	#endregion TreasurePowerMultiplier
 		draw_sprite_ext(spr_TreasureAttackSpeed, 0, 32, 178, 2, 2, 0, c_white, 1);
 		draw_text(80, 184, string(obj_Player.cooldownTimer));
 		
 		draw_sprite_ext(spr_TreasureRange, 0, 32, 210, 2, 2, 0, c_white, 1);
-		draw_text(80, 216, string(obj_Player.attackRange));
+		draw_text(80, 216, string(obj_Player.attackRange) + "%");
 #endregion TreasureMultipliers
 #region DroppedItems
 	#region Keys
@@ -196,7 +196,6 @@
 		}
 		draw_text(1080, 280, "RoomsPassed: " + string(obj_Player.roomsPassed));
 		draw_text(1080, 300, "RoomsToBoss: " + string(obj_Player.roomsToBoss));
-		draw_text(1080, 320, "GetTime: " + string(get_timer()));
 		draw_text(0, 700, "Achievement: " + string(global.difficultyCompleted)) 
 	}
 #endregion Debug

@@ -6,7 +6,9 @@ draw_self();
 if(global.endlessmode)
 {
 	if (obj_EndlessSelected.sprite_index == spr_EndlessModeButton){
-		draw_text(x, y-100, global.difficulty + " Endless");
+		var diff = string(global.difficulty);
+
+		draw_text(x, y - 100, string_upper(string_char_at(diff, 1)) + string_delete(diff, 1, 1) + " Endless");
 		draw_text(x, y-175, "No boss. look how long you can survive in the " + global.difficulty + " endless dungeon.");
 		draw_text(x, y-150, "Get a special trophy for the " + global.difficulty + " difficulty after beating 100 floors.");
 	}
