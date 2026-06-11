@@ -92,7 +92,7 @@
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
-
+	
 #endregion HealthBar
 #region Door
 	draw_sprite_ext(spr_Door, 0, 32, 68, 1, 1, 0, c_white, 1);
