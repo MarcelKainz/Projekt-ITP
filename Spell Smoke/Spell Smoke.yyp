@@ -66,6 +66,7 @@
     {"id":{"name":"obj_EasyDifficultyButton","path":"objects/obj_EasyDifficultyButton/obj_EasyDifficultyButton.yy",},},
     {"id":{"name":"obj_EndlessModeButton","path":"objects/obj_EndlessModeButton/obj_EndlessModeButton.yy",},},
     {"id":{"name":"obj_EndlessSelected","path":"objects/obj_EndlessSelected/obj_EndlessSelected.yy",},},
+    {"id":{"name":"obj_Enemy_Boss","path":"objects/obj_Enemy_Boss/obj_Enemy_Boss.yy",},},
     {"id":{"name":"obj_Enemy_Ghoul","path":"objects/obj_Enemy_Ghoul/obj_Enemy_Ghoul.yy",},},
     {"id":{"name":"obj_Enemy_Random","path":"objects/obj_Enemy_Random/obj_Enemy_Random.yy",},},
     {"id":{"name":"obj_Enemy_Wraith","path":"objects/obj_Enemy_Wraith/obj_Enemy_Wraith.yy",},},
