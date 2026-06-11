@@ -1,7 +1,7 @@
 //Seed();
 
 randomise();
-
+/*
 if (!variable_global_exists("seed"))
 {
     global.seed = 0;
@@ -17,7 +17,7 @@ else
 
     global.seed = random_get_seed();
 }
-
+*/
 gml_pragma("MarkTagAsUsed", "playerSpr");
 
 endlessMode = false;
@@ -103,8 +103,3 @@ debug = global.debug;
 window_set_cursor(cr_none);
 cursor_sprite = spr_Cursor;
 
-buttonMoveUp = ord("W");
-buttonMoveLeft = ord("A");
-buttonMoveRight = ord("D");
-buttonMoveDown = ord("S");
-buttonSprint = vk_shift;
