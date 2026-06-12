@@ -17,13 +17,13 @@
 	{
 	    xMove = -1;
 	}
-	else
+	/*else
 	{
 	    xMove =
 	        keyboard_check(vk_right)
 	        -
 	        keyboard_check(vk_left);
-	}
+	}*/
 
 	if (keyboard_check(global.buttonMoveDown))
 	{
@@ -33,13 +33,13 @@
 	{
 	    yMove = -1;
 	}
-	else
+	/*else
 	{
 	    yMove =
 	        keyboard_check(vk_down)
 	        -
 	        keyboard_check(vk_up);
-	}
+	}*/
 	#endregion WASD + ArrowKeys
 
 	if(xMove == 0)
