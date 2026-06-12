@@ -52,7 +52,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Spell Smoke",
   "resources":[
@@ -80,6 +80,8 @@
     {"id":{"name":"obj_MediumDifficultyButton","path":"objects/obj_MediumDifficultyButton/obj_MediumDifficultyButton.yy",},},
     {"id":{"name":"obj_MenuController","path":"objects/obj_MenuController/obj_MenuController.yy",},},
     {"id":{"name":"obj_MonsterLockedChest","path":"objects/obj_MonsterLockedChest/obj_MonsterLockedChest.yy",},},
+    {"id":{"name":"obj_MusicButton","path":"objects/obj_MusicButton/obj_MusicButton.yy",},},
+    {"id":{"name":"obj_MusicVolumeSlider","path":"objects/obj_MusicVolumeSlider/obj_MusicVolumeSlider.yy",},},
     {"id":{"name":"obj_NextPage","path":"objects/obj_NextPage/obj_NextPage.yy",},},
     {"id":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},},
     {"id":{"name":"obj_ParentButton","path":"objects/obj_ParentButton/obj_ParentButton.yy",},},
