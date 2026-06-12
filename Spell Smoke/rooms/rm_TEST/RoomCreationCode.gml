@@ -1,1 +1,1 @@
-array_push(global.difficultyCompleted, "easy");
+//array_push(global.difficultyCompleted, "easy");
