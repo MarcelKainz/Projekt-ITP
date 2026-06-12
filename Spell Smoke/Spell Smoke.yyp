@@ -155,7 +155,6 @@
     {"id":{"name":"spr_ChestLocked","path":"sprites/spr_ChestLocked/spr_ChestLocked.yy",},},
     {"id":{"name":"spr_ChestMonsterLocked","path":"sprites/spr_ChestMonsterLocked/spr_ChestMonsterLocked.yy",},},
     {"id":{"name":"spr_ChestOpening","path":"sprites/spr_ChestOpening/spr_ChestOpening.yy",},},
-    {"id":{"name":"spr_ControlGuidePlaceholder","path":"sprites/spr_ControlGuidePlaceholder/spr_ControlGuidePlaceholder.yy",},},
     {"id":{"name":"spr_Controls","path":"sprites/spr_Controls/spr_Controls.yy",},},
     {"id":{"name":"spr_Cursor","path":"sprites/spr_Cursor/spr_Cursor.yy",},},
     {"id":{"name":"spr_DebugMode","path":"sprites/spr_DebugMode/spr_DebugMode.yy",},},
