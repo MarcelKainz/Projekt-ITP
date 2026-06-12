@@ -8,7 +8,8 @@ if (mouse_check_button_pressed(mb_left)) {
 
 if (is_listening) {
     if (keyboard_check_pressed(vk_anykey)) {
-        variable_global_set(buttonToChange, keyboard_lastkey);   
+        variable_global_set(buttonToChange, keyboard_lastkey);
+        
         is_listening = false;
     }
 }
