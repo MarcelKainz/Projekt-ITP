@@ -1,11 +1,13 @@
 event_inherited();
 
-global.isMuted = !global.isMuted;
+global.musicMuted = !global.musicMuted;
 
-if (global.isMuted)
+if (global.musicMuted)
 {
-    audio_master_gain(0);
+    audio_sound_gain(sou_StartMenu, 0, 0);
+    audio_sound_gain(sou_Theme, 0, 0);
 }
+	
 else
 {
     audio_sound_gain(sou_StartMenu, global.music, 0);
