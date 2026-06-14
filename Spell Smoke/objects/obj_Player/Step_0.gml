@@ -81,34 +81,47 @@
 	
 #endregion Camera
 #region Shoot
-	// cooldown runter
-	if (cooldown > -10)
-	{
-	    cooldown--;
-	}
+// cooldown runter
+if (cooldown > -10)
+{
+    cooldown--;
+}
 
-	// shoot
-	if (mouse_check_button(mb_left))
-	{
-	    if (cooldown <= 0)
-	    {
-	        var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
-	        bullet.owner = id;
-	        bullet.damage *= damageMultiplier;
-			
-			cursorReady = 1 - clamp(cooldown / cooldownTimer, 0, 1);
+// merken ob Taste gehalten wird
+if (mouse_check_button_pressed(mb_left))
+{
+    holding = false;
+}
 
-	        // normaler Schuss
-	        if (cooldown <= -1)
-	        {
-	            cooldown = cooldownTimer;
-	        }
-	        else
-	        {
-	            cooldown = cooldownTimer * 2;
-	        }
-	    }
-	}
+if (mouse_check_button(mb_left))
+{
+    if (cooldown <= 0)
+    {
+        var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
+        bullet.owner = id;
+        bullet.damage *= damageMultiplier;
+
+        // Taste wurde seit dem letzten Schuss nie losgelassen
+        if (holding)
+        {
+            cooldown = cooldownTimer * 2;
+            currentCooldownMax = cooldownTimer * 2;
+        }
+        else
+        {
+            cooldown = cooldownTimer;
+            currentCooldownMax = cooldownTimer;
+        }
+
+        holding = true;
+    }
+}
+
+// Loslassen setzt zurück
+if (mouse_check_button_released(mb_left))
+{
+    holding = false;
+}
 #endregion Shoot	
 #region Hit
 	if(iFrames > 0)

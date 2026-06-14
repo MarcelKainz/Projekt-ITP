@@ -177,7 +177,16 @@
 	}
 #endregion Debug
 #region Cursor
-	var ready = 1 - clamp(cooldown / cooldownTimer, 0, 1);
+	var ready;
+
+	if (cooldown > 0)
+	{
+	    ready = 1 - (cooldown / currentCooldownMax);
+	}
+	else
+	{
+	    ready = 1;
+	}
 
 	var mx = device_mouse_x_to_gui(0);
 	var my = device_mouse_y_to_gui(0);
