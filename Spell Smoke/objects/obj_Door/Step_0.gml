@@ -19,7 +19,7 @@ else
 		{
 			audio_play_sound(sou_NextRoom, 1, false);
 			if (fixedRoom != noone) {
-				room_goto(roomID);
+				room_goto(fixedRoom);
 				obj_Player.roomsPassed++;
 			} else RoomLogic(); //basically Always
 		}

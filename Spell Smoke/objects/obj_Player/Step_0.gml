@@ -1,7 +1,7 @@
 #region Movement
 
-	var maxi = keyboard_check(buttonSprint) ? maxSpeed * sprintMultiplier : maxSpeed;
-	var acci = keyboard_check(buttonSprint) ? accel * sprintMultiplier : accel;
+	var maxi = keyboard_check(global.buttonSprint) ? maxSpeed * sprintMultiplier : maxSpeed;
+	var acci = keyboard_check(global.buttonSprint) ? accel * sprintMultiplier : accel;
 	 //ONLY modifying maxSpeed DOES NOT WORK for walking diagnoally, idk why
 	 //ALWAYS buff maxSpeed AND accel
 	#region WASD + ArrowKeys
@@ -9,11 +9,11 @@
 	var yMove = 0;
 
 	/// Horizontal
-	if (keyboard_check(buttonMoveRight))
+	if (keyboard_check(global.buttonMoveRight))
 	{
 	    xMove = 1;
 	}
-	else if (keyboard_check(buttonMoveLeft))
+	else if (keyboard_check(global.buttonMoveLeft))
 	{
 	    xMove = -1;
 	}
@@ -25,11 +25,11 @@
 	        keyboard_check(vk_left);
 	}
 
-	if (keyboard_check(buttonMoveDown))
+	if (keyboard_check(global.buttonMoveDown))
 	{
 	    yMove = 1;
 	}
-	else if (keyboard_check(buttonMoveUp))
+	else if (keyboard_check(global.buttonMoveUp))
 	{
 	    yMove = -1;
 	}

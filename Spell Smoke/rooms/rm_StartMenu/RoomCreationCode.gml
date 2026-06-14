@@ -1,6 +1,14 @@
 cursor_sprite = noone;
 window_set_cursor(cr_default);
 
-//if (get_timer() < 1000) //nur am Anfang des Spiels laden
-LoadAchievements("save.txt", global.difficultyCompleted);
-//SaveAchievements("save.txt", global.difficultyCompleted);
+if (get_timer() < 3000000){ //nur am Anfang des Spiels laden
+	global.difficultyCompleted = [""];
+	LoadAchievements("save.txt", global.difficultyCompleted);
+}
+SaveAchievements("save.txt", global.difficultyCompleted);
+
+global.buttonMoveUp = ord("W");
+global.buttonMoveLeft = ord("A");
+global.buttonMoveRight = ord("D");
+global.buttonMoveDown = ord("S");
+global.buttonSprint = vk_shift;

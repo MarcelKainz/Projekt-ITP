@@ -3,14 +3,14 @@ if (position_meeting(mouse_x, mouse_y, id))
     target_scale = 1.6;
     target_color = c_gray;
 	
-	/*if (sound_cue){
-		if (!audio_is_playing(sou_NextRoom)){
-			var hoverSound = audio_play_sound(sou_NextRoom, 1, false);
-			audio_sound_pitch(hoverSound, 0.5);
-			audio_sound_gain(hoverSound, 0.5, 0);
-			sound_cue = false;
-		}
-	}*/
+	if (variable_instance_exists(id, "sound_cue") && sound_cue) {
+	    if (!audio_is_playing(sou_NextRoom)) {
+	        var hoverSound = audio_play_sound(sou_NextRoom, 1, false);
+	        audio_sound_pitch(hoverSound, 0.5);
+	        audio_sound_gain(hoverSound, 0.5, 0);
+	        sound_cue = false;
+	    }
+	}
 } 
 else 
 {

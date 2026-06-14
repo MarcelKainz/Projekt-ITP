@@ -87,12 +87,12 @@
 	/// ----------------------
 	/// ICON
 	/// ----------------------
-	draw_sprite(spr_TreasureHealth, 0, bar_x - 48, bar_y - 2);
+	draw_sprite_ext(spr_TreasureHealth, 0, bar_x - 48, bar_y - 2, 2, 2, false, c_white, 1);
 
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
-
+	
 #endregion HealthBar
 #region Door
 	draw_sprite_ext(spr_Door, 0, 32, 68, 1, 1, 0, c_white, 1);
@@ -120,17 +120,17 @@
 #region TreasureMultipliers
 	#region TreasureSpeedMultiplier
 		draw_sprite_ext(spr_TreasureSpeed, 0, 32, 114, 2, 2, 0, c_white, 1);
-		draw_text(80, 120, string(obj_Player.sprintMultiplier));
+		draw_text(80, 120, string(obj_Player.sprintMultiplier/1.25*100) + "%");
 	#endregion TreasureSpeedMultiplier
 	#region TreasurePowerMultiplier
 		draw_sprite_ext(spr_TreasurePower, 0, 32, 146, 2, 2, 0, c_white, 1);
-		draw_text(80, 152, string(obj_Player.damageMultiplier));
+		draw_text(80, 152, string(obj_Player.damageMultiplier*100) + "%");
 	#endregion TreasurePowerMultiplier
 		draw_sprite_ext(spr_TreasureAttackSpeed, 0, 32, 178, 2, 2, 0, c_white, 1);
 		draw_text(80, 184, string(obj_Player.cooldownTimer));
 		
 		draw_sprite_ext(spr_TreasureRange, 0, 32, 210, 2, 2, 0, c_white, 1);
-		draw_text(80, 216, string(obj_Player.attackRange));
+		draw_text(80, 216, string(obj_Player.attackRange) + "%");
 #endregion TreasureMultipliers
 #region DroppedItems
 	#region Keys

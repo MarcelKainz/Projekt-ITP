@@ -9,3 +9,5 @@ if (iFrames <= 0) {
 behaviour();
 
 damageFlash = max(0, damageFlash - 0.08)
+
+depth = -y;

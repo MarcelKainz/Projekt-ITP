@@ -1,0 +1,20 @@
+// Linie
+draw_rectangle(
+    x,
+    y,
+    x + slider_width,
+    y + slider_height,
+    false
+);
+
+// Knopf
+draw_circle(
+    x + knob_x,
+    y + global.music / 2,
+    15,
+    false
+);
+
+// Text
+draw_text(x, y - 40,
+    "Music Volume: " + string(round(global.music * 100)) + "%");

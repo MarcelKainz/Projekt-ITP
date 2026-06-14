@@ -67,10 +67,10 @@ function Attack() {
 function Shoot() {
 	var bullet = instance_create_layer(x, y, "Instances", obj_simpleBullet);
 	bullet.direction = point_direction(x, y, player.x, player.y);
-	bullet.speed = 8;
+	bullet.speed = 5;
 	bullet.image_angle = bullet.direction;
 	bullet.hitPlayer = true;
-	
+	bullet.damage = damage;
 	bullet.dmgType = ["force", "necrotic"];
 	shootCooldown = 70;
 }
