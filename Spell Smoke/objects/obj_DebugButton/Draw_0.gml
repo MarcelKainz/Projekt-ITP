@@ -1,6 +1,6 @@
 event_inherited();
 
-if(debug){
+if(global.debug){
 	sprite_index = spr_DebugModeSelected;
 }
 

@@ -1,4 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-global.musicMuted = false;
+
+if(!variable_global_exists("musicMuted")){
+	global.musicMuted = false;
+}

@@ -1,3 +1,5 @@
 event_inherited()
 
-debug = false;
+if(!variable_global_exists("debug")){
+	global.debug = false;
+}

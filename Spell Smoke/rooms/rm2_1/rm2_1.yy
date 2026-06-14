@@ -12,11 +12,11 @@
     {"name":"inst_798640D4","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_421723D0","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_4051CCD5","path":"rooms/rm2_1/rm2_1.yy",},
-    {"name":"inst_476B4E9C","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_277189D5","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_43BA8F0D","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_75148424","path":"rooms/rm2_1/rm2_1.yy",},
     {"name":"inst_388B7721","path":"rooms/rm2_1/rm2_1.yy",},
+    {"name":"inst_476B4E9C","path":"rooms/rm2_1/rm2_1.yy",},
   ],
   "isDnd":false,
   "layers":[

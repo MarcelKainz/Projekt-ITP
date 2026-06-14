@@ -101,5 +101,3 @@ function GetHit(damage, type) {
 debug = global.debug;
 
 window_set_cursor(cr_none);
-cursor_sprite = spr_Cursor;
-
