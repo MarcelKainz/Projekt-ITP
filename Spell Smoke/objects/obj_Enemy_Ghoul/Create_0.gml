@@ -10,7 +10,7 @@ itemPool = ["Heal", "Key"]
 #region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
-	case "middle" : hp *= 1.5; break;
+	case "medium" : hp *= 2; break;
 	case "hard" : damage *= 2; hp *= 3; break;
 }
 if (player.endlessMode) //scale stats based on Room
