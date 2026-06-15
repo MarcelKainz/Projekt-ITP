@@ -52,6 +52,11 @@ function Attack() {
 	var playerDistance = point_distance(x, y, player.x, player.y)
 	lineOfSight = collision_line(x, y, player.x, player.y, obj_ParentSolid, false, true);
 	
+	if (player.x > x)
+		image_xscale = -1;
+	if (player.x < x)
+		image_xscale = 1;
+	
 	var walk;
 	if (playerDistance > 200 || lineOfSight != noone)
 		walk = path;
