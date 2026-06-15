@@ -18,7 +18,7 @@ global.achievements[$ "medium"] = {
 global.achievements[$ "hard"] = {
     title : "Expert Bounty Hunter",
     desc : "Beat the hard difficulty",
-    sprite : spr_HardDifficultyButtonDiamond
+    sprite : spr_HardDifficultyButtonGold
 };
 
 global.achievements[$ "easyEndless"] = {

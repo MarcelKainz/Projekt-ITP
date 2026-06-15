@@ -27,6 +27,7 @@ function GetHit(atk) {
 	audio_play_sound(sou_Hit, 1, false);
 	atk.Hit(true);
 	
+	sprite_index = spr_Ghoul_run;
 	behaviour = Attack;//agro on hit
 	
 	if (hp <= 0)
