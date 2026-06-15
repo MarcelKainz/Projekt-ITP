@@ -156,6 +156,7 @@
     {"id":{"name":"spr_Boss_idle","path":"sprites/spr_Boss_idle/spr_Boss_idle.yy",},},
     {"id":{"name":"spr_Boss_invincible","path":"sprites/spr_Boss_invincible/spr_Boss_invincible.yy",},},
     {"id":{"name":"spr_bulletBall","path":"sprites/spr_bulletBall/spr_bulletBall.yy",},},
+    {"id":{"name":"spr_bulletBallExplosion","path":"sprites/spr_bulletBallExplosion/spr_bulletBallExplosion.yy",},},
     {"id":{"name":"spr_bulletBallGreen","path":"sprites/spr_bulletBallGreen/spr_bulletBallGreen.yy",},},
     {"id":{"name":"spr_ChestLocked","path":"sprites/spr_ChestLocked/spr_ChestLocked.yy",},},
     {"id":{"name":"spr_ChestMonsterLocked","path":"sprites/spr_ChestMonsterLocked/spr_ChestMonsterLocked.yy",},},
