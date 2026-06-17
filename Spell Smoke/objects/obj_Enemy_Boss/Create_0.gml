@@ -17,6 +17,7 @@ maxHp = hp;
 
 function GetHit(atk) {
 	hp -= atk.damage;
+	iFrames = 20;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);
