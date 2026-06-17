@@ -17,7 +17,6 @@ maxHp = hp;
 
 function GetHit(atk) {
 	hp -= atk.damage;
-	iFrames = 20;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);
@@ -38,12 +37,13 @@ function Idle() { //wait a second, Stun or smth, then choose random attack
 	switch(temp) {
 		case 1: //Circle
 			behaviour = AttackCircleMove;
+			sprite_index = spr_Boss_walk;
 			tempVars[0] = 0; //Angle of bullets
 			break;
 		case 2: //Summon
 			cooldown = 1000; //time of invincibility
 			iFrames = 1001; //actual invincibility
-			sprite_index = spr_Boss_invincible;
+			sprite_index = spr_Boss_magic;
 			behaviour = Summoning;
 			break;
 		case 3: //Dash
@@ -61,7 +61,8 @@ function AttackCircleMove() {
 		move_towards_point(270, 210, min(moveSpeed, point_distance(x, y, 270, 210)));
 	else {
 		behaviour = AttackCircle;
-		speed = 0;
+		sprite_index = spr_Boss_magic;
+		speed = 0; //so we don't slide further
 	}
 }
 function AttackCircle() { //shoot sludge bullets in a circle around
@@ -83,6 +84,8 @@ function AttackCircle() { //shoot sludge bullets in a circle around
 	
 	if (tempVars[0] >= 700){
 		behaviour = Idle;
+		sprite_index = spr_Boss_idle;
+		image_speed = spr_Boss_idle.image_speed; //cuz it's 0 after draw-end
 		cooldown = 200;
 	}
 }
@@ -105,6 +108,7 @@ function Summoning() { //temporarily invincible, summones a small number of rand
 	cooldown--;
 	if !(cooldown > 0) {
 		sprite_index = spr_Boss_idle;
+		image_speed = spr_Boss_idle.image_speed; //cuz it's 0 after draw-end
 		behaviour = Idle;
 		cooldown = 150;
 	}
