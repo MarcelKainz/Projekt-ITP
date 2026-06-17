@@ -10,13 +10,14 @@ function achievement_get_data(_id)
 
 function achievement_unlock(_id)
 {
+	if(room != rm_StartMenu) {
+	    var ach = achievement_get_data(_id);
 
-    var ach = achievement_get_data(_id);
-
-    if (ach != undefined)
-    {
-        array_push(global.achievementQueue, ach);
-    }
+	    if (ach != undefined)
+	    {
+	        array_push(global.achievementQueue, ach);
+	    }
+	}
 }
 
 function achievement_popup(_id)
