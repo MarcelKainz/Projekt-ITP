@@ -149,6 +149,7 @@
     {"id":{"name":"sou_Lock","path":"sounds/sou_Lock/sou_Lock.yy",},},
     {"id":{"name":"sou_Lose","path":"sounds/sou_Lose/sou_Lose.yy",},},
     {"id":{"name":"sou_NextRoom","path":"sounds/sou_NextRoom/sou_NextRoom.yy",},},
+    {"id":{"name":"sou_Stairs","path":"sounds/sou_Stairs/sou_Stairs.yy",},},
     {"id":{"name":"sou_StartMenu","path":"sounds/sou_StartMenu/sou_StartMenu.yy",},},
     {"id":{"name":"sou_Theme","path":"sounds/sou_Theme/sou_Theme.yy",},},
     {"id":{"name":"Sou_Victory","path":"sounds/Sou_Victory/Sou_Victory.yy",},},
