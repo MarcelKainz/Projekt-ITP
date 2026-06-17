@@ -13,7 +13,7 @@ if(price!=0)
 	switch(statToIncrease){
 	
 		case "sprintMultiplier":
-			name = "Boots of Speed";
+			name = "Elixir of Speed";
 			description = $"Grants the user {(increaseModifier / 1.25) * 100}% more sprint speed";
 		break;
 	
