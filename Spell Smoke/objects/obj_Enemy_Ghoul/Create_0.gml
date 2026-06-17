@@ -10,7 +10,7 @@ itemPool = ["Heal", "Key"]
 #region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
-	case "middle" : hp *= 1.5; break;
+	case "medium" : hp *= 2; break;
 	case "hard" : damage *= 2; hp *= 3; break;
 }
 if (player.endlessMode) //scale stats based on Room
@@ -27,6 +27,7 @@ function GetHit(atk) {
 	audio_play_sound(sou_Hit, 1, false);
 	atk.Hit(true);
 	
+	sprite_index = spr_Ghoul_run;
 	behaviour = Attack;//agro on hit
 	
 	if (hp <= 0)

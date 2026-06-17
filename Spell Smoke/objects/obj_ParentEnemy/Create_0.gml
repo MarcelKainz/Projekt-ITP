@@ -7,7 +7,7 @@ function GetHit(atk) {
 	iFrames = 25;
 	damageFlash = 1;
 	
-	audio_play_sound(sou_Hit, 1, false);
+	//audio_play_sound(sou_Hit, 1, false);
 	instance_destroy(atk);
 	
 	behaviour = Attack;

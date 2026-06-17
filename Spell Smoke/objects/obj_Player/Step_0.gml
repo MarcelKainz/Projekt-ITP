@@ -17,13 +17,13 @@
 	{
 	    xMove = -1;
 	}
-	else
+	/*else
 	{
 	    xMove =
 	        keyboard_check(vk_right)
 	        -
 	        keyboard_check(vk_left);
-	}
+	}*/
 
 	if (keyboard_check(global.buttonMoveDown))
 	{
@@ -33,13 +33,13 @@
 	{
 	    yMove = -1;
 	}
-	else
+	/*else
 	{
 	    yMove =
 	        keyboard_check(vk_down)
 	        -
 	        keyboard_check(vk_up);
-	}
+	}*/
 	#endregion WASD + ArrowKeys
 
 	if(xMove == 0)
@@ -56,23 +56,8 @@
 		ySpeed *= 1/sqrt(2);
 		xSpeed *= 1/sqrt(2);
 	}
-
-
-	// bei mehr als 5 Speed Bossts einfach bei 5 bleiben, weil sonst unspielbar
 	
-	if(sprintMultiplier >= 3.5)
-	{
-		move_and_collide(xSpeed*1.5, ySpeed*1.5, obj_ParentSolid)
-	}
-	else
-	{
-		if(sprintMultiplier > 1.25 && sprintMultiplier < 3.5)
-		{
-			move_and_collide(xSpeed*1.15, ySpeed*1.15, obj_ParentSolid)
-		}
-		else
-			move_and_collide(xSpeed/1.2, ySpeed/1.2, obj_ParentSolid);
-	}
+	move_and_collide(xSpeed, ySpeed, obj_ParentSolid)
 	
 #endregion Movement
 #region Sprites
@@ -96,19 +81,47 @@
 	
 #endregion Camera
 #region Shoot
+// cooldown runter
+if (cooldown > -10)
+{
+    cooldown--;
+}
 
-if (mouse_check_button(mb_left)) && (cooldown < 1)
-	{
-		var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
-		bullet.owner = id;
-		bullet.damage *= damageMultiplier;
-		cooldown = cooldownTimer;
-	}
-	if(cooldown > 0)
-	{
-		cooldown = cooldown - 1;
-	}
+// merken ob Taste gehalten wird
+if (mouse_check_button_pressed(mb_left))
+{
+    holding = false;
+}
 
+if (mouse_check_button(mb_left))
+{
+    if (cooldown <= 0)
+    {
+        var bullet = instance_create_layer(x, y, "Instances", obj_PlayerBullet);
+        bullet.owner = id;
+        bullet.damage *= damageMultiplier;
+
+        // Taste wurde seit dem letzten Schuss nie losgelassen
+        if (holding)
+        {
+            cooldown = cooldownTimer * 2;
+            currentCooldownMax = cooldownTimer * 2;
+        }
+        else
+        {
+            cooldown = cooldownTimer;
+            currentCooldownMax = cooldownTimer;
+        }
+
+        holding = true;
+    }
+}
+
+// Loslassen setzt zurück
+if (mouse_check_button_released(mb_left))
+{
+    holding = false;
+}
 #endregion Shoot	
 #region Hit
 	if(iFrames > 0)
@@ -118,42 +131,42 @@ if (mouse_check_button(mb_left)) && (cooldown < 1)
 	
 	damageFlash = max(0, damageFlash - 0.08);
 #endregion Hit
-if(keyboard_check_pressed(vk_enter))
+/*if(keyboard_check_pressed(vk_enter))
 {
 	export_json("", "");
-}
+}*/
 
 
 
 #region Achievements
 if (bones >= 100 && !array_contains(global.difficultyCompleted, "rich"))
 {
-	array_push(global.difficultyCompleted, "rich")
+	array_push(global.difficultyCompleted, "rich");
 }
 
 if (damageMultiplier >= 5 && !array_contains(global.difficultyCompleted, "power"))
 {
-	array_push(global.difficultyCompleted, "power")
+	array_push(global.difficultyCompleted, "power");
 }
 
 if (sprintMultiplier >= 2.5 && !array_contains(global.difficultyCompleted, "speed"))
 {
-	array_push(global.difficultyCompleted, "speed")
+	array_push(global.difficultyCompleted, "speed");
 }
 
 if (max_hp >= 10 && !array_contains(global.difficultyCompleted, "tank"))
 {
-	array_push(global.difficultyCompleted, "tank")
+	array_push(global.difficultyCompleted, "tank");
 }
 
 if (attackRange >= 350 && !array_contains(global.difficultyCompleted, "sniper"))
 {
-	array_push(global.difficultyCompleted, "sniper")
+	array_push(global.difficultyCompleted, "sniper");
 }
 
 if (cooldownTimer <= 15 && !array_contains(global.difficultyCompleted, "rapidFire"))
 {
-	array_push(global.difficultyCompleted, "rapidFire")
+	array_push(global.difficultyCompleted, "rapidFire");
 }
 #endregion Achievements
 

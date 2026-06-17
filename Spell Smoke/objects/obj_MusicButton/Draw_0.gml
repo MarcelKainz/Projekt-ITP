@@ -1,4 +1,4 @@
-if (global.isMuted)
+if (global.musicMuted)
 {
     draw_sprite(spr_MuteButton, 0, x, y);
 }
