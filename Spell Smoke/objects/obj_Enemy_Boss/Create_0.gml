@@ -10,7 +10,7 @@ prevAtk = 0;
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
 	case "middle" : hp *= 2; damage *= 2; break;
-	case "hard" : damage *= 3; hp *= 3; break;
+	case "hard" : damage *= 2; hp *= 3; break;
 }
 #endregion
 maxHp = hp;
@@ -86,10 +86,10 @@ function AttackCircle() { //shoot sludge bullets in a circle around
 		cooldown = 200;
 	}
 }
-function AttackCircleBullet(offset) {
+function AttackCircleBullet(angle) {
 	var bullet = instance_create_layer(x, y, "Instances", obj_simpleBullet);
 	bullet.sprite_index = spr_sludgeBullet;
-	bullet.direction = point_direction(x, y, x + lengthdir_x(1, tempVars[0] + offset), y + lengthdir_y(1, tempVars[0] + offset));
+	bullet.direction = point_direction(x, y, x + lengthdir_x(1, tempVars[0] + angle), y + lengthdir_y(1, tempVars[0] + angle));
 	bullet.image_angle = bullet.direction;
 	bullet.speed = 5;
 	bullet.damage = damage;
