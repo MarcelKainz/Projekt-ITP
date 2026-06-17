@@ -11,7 +11,7 @@ if (player_exists != player_was_alive) {
 			current_music = audio_play_sound(sou_Lose, 10, false);
 		}
 		else if(room == rm_VictoryScreen){
-			current_music = audio_play_sound(Sou_Victory, 10, false);
+			current_music = audio_play_sound(sou_Victory, 10, false);
 		}
 		else{
 			current_music = audio_play_sound(sou_StartMenu, 10, true);

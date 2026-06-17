@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Sou_Victory",
+  "%Name":"sou_Victory",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":4.2724714,
   "exportDir":"",
-  "name":"Sou_Victory",
+  "name":"sou_Victory",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Sou_Victory.wav",
+  "soundFile":"sou_Victory.wav",
   "volume":1.0,
 }
