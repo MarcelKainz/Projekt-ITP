@@ -5,19 +5,19 @@ damageFlash = 0;
 cooldown = 120
 tempVars = [];
 prevAtk = 0;
+shield = false;
 
 #region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
 	case "middle" : hp *= 2; damage *= 2; break;
-	case "hard" : damage *= 3; hp *= 3; break;
+	case "hard" : damage *= 2; hp *= 3; break;
 }
 #endregion
 maxHp = hp;
 
 function GetHit(atk) {
 	hp -= atk.damage;
-	iFrames = 20;
 	damageFlash = 1;
 	
 	audio_play_sound(sou_Hit, 1, false);
@@ -32,18 +32,20 @@ function Idle() { //wait a second, Stun or smth, then choose random attack
 		return;
 	}
 	//randomizer for attacks:
-	var temp = ceil(random(3));
+	var temp = ceil(random(2));
 	while (temp == prevAtk) { temp = ceil(random(3)) } //same atk not twice in a row
 	prevAtk = temp;
 	switch(temp) {
 		case 1: //Circle
 			behaviour = AttackCircleMove;
+			sprite_index = spr_Boss_walk;
 			tempVars[0] = 0; //Angle of bullets
 			break;
 		case 2: //Summon
 			cooldown = 1000; //time of invincibility
 			iFrames = 1001; //actual invincibility
-			sprite_index = spr_Boss_invincible;
+			sprite_index = spr_Boss_magic;
+			shield = true;
 			behaviour = Summoning;
 			break;
 		case 3: //Dash
@@ -61,7 +63,8 @@ function AttackCircleMove() {
 		move_towards_point(270, 210, min(moveSpeed, point_distance(x, y, 270, 210)));
 	else {
 		behaviour = AttackCircle;
-		speed = 0;
+		sprite_index = spr_Boss_magic;
+		speed = 0; //so we don't slide further
 	}
 }
 function AttackCircle() { //shoot sludge bullets in a circle around
@@ -83,13 +86,14 @@ function AttackCircle() { //shoot sludge bullets in a circle around
 	
 	if (tempVars[0] >= 700){
 		behaviour = Idle;
+		sprite_index = spr_Boss_idle;
 		cooldown = 200;
 	}
 }
-function AttackCircleBullet(offset) {
+function AttackCircleBullet(angle) {
 	var bullet = instance_create_layer(x, y, "Instances", obj_simpleBullet);
 	bullet.sprite_index = spr_sludgeBullet;
-	bullet.direction = point_direction(x, y, x + lengthdir_x(1, tempVars[0] + offset), y + lengthdir_y(1, tempVars[0] + offset));
+	bullet.direction = point_direction(x, y, x + lengthdir_x(1, tempVars[0] + angle), y + lengthdir_y(1, tempVars[0] + angle));
 	bullet.image_angle = bullet.direction;
 	bullet.speed = 5;
 	bullet.damage = damage;
@@ -100,15 +104,17 @@ function AttackCircleBullet(offset) {
 #region Summoning
 function Summoning() { //temporarily invincible, summones a small number of random enemies in the room
 	if (cooldown % 150 == 0) {
-		/*var spawn = */instance_create_layer(max(random(480), 64), max(random(352), 64), "Instances", obj_Enemy_Random, {animate : true});
-		//spawn.behaviour = Attack;
+		instance_create_layer(max(random(480), 64), max(random(352), 64), "Instances", obj_Enemy_Random, {animate : true});
 	}
+	
 	cooldown--;
 	if !(cooldown > 0) {
 		sprite_index = spr_Boss_idle;
 		behaviour = Idle;
 		cooldown = 150;
+		shield = false;
 	}
+
 }
 #endregion
 /*
