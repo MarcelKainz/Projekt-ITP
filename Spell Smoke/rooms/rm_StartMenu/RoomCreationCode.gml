@@ -11,6 +11,3 @@ if (get_timer() < 3000000){ //nur am Anfang des Spiels laden
 	LoadAchievements("save.txt", global.difficultyCompleted);
 }
 SaveAchievements("save.txt", global.difficultyCompleted);
-
-
-obj_Sound.player_was_alive = !obj_Sound.player_was_alive

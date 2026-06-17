@@ -40,5 +40,4 @@ draw_circle(
 // Text
 
 draw_set_color(c_white);
-draw_text(x, y - 40,
-    "Master Volume: " + string(round(global.volume * 100)) + "%");
+draw_text(x, y - 40, "Master Volume: " + string(round(global.volume * 100)) + "%");
