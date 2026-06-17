@@ -5,6 +5,7 @@ damageFlash = 0;
 cooldown = 120
 tempVars = [];
 prevAtk = 0;
+shield = false;
 
 #region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
@@ -31,7 +32,7 @@ function Idle() { //wait a second, Stun or smth, then choose random attack
 		return;
 	}
 	//randomizer for attacks:
-	var temp = ceil(random(3));
+	var temp = ceil(random(2));
 	while (temp == prevAtk) { temp = ceil(random(3)) } //same atk not twice in a row
 	prevAtk = temp;
 	switch(temp) {
@@ -44,6 +45,7 @@ function Idle() { //wait a second, Stun or smth, then choose random attack
 			cooldown = 1000; //time of invincibility
 			iFrames = 1001; //actual invincibility
 			sprite_index = spr_Boss_magic;
+			shield = true;
 			behaviour = Summoning;
 			break;
 		case 3: //Dash
@@ -85,7 +87,6 @@ function AttackCircle() { //shoot sludge bullets in a circle around
 	if (tempVars[0] >= 700){
 		behaviour = Idle;
 		sprite_index = spr_Boss_idle;
-		image_speed = spr_Boss_idle.image_speed; //cuz it's 0 after draw-end
 		cooldown = 200;
 	}
 }
@@ -105,13 +106,15 @@ function Summoning() { //temporarily invincible, summones a small number of rand
 	if (cooldown % 150 == 0) {
 		instance_create_layer(max(random(480), 64), max(random(352), 64), "Instances", obj_Enemy_Random, {animate : true});
 	}
+	
 	cooldown--;
 	if !(cooldown > 0) {
 		sprite_index = spr_Boss_idle;
-		image_speed = spr_Boss_idle.image_speed; //cuz it's 0 after draw-end
 		behaviour = Idle;
 		cooldown = 150;
+		shield = false;
 	}
+
 }
 #endregion
 /*
