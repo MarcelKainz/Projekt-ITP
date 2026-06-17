@@ -15,4 +15,6 @@ if (keyboard_check_pressed(vk_enter))
     global.seed = int64(text);
 
     random_set_seed(global.seed);
+
+    show_debug_message("Seed gesetzt: " + string(global.seed));
 }

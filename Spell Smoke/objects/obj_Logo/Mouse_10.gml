@@ -1,4 +1,0 @@
-if(room == rm_StartMenu)
-{
-	window_set_cursor(cr_handpoint);
-}

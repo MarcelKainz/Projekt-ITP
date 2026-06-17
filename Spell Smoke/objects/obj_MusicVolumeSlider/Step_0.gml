@@ -22,7 +22,7 @@ if (dragging)
 
     global.music = knob_x / slider_width;
 
-	if (!global.musicMuted)
+	if (!global.isMuted)
 	{
 	    audio_sound_gain(sou_StartMenu, global.music, 0);
 	    audio_sound_gain(sou_Theme, global.music, 0);

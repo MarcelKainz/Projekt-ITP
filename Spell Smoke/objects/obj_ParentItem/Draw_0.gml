@@ -14,12 +14,12 @@ if(price!=0)
 	
 		case "sprintMultiplier":
 			name = "Boots of Speed";
-			description = $"Grants the user {(increaseModifier / 1.25) * 100}% more sprint speed";
+			description = $"Grants the user {increaseModifier} more sprint speed";
 		break;
 	
 		case "damageMultiplier":
 			name = "Relic of Strength";
-			description = $"Grants the user {increaseModifier*100}% more strength";
+			description = $"Grants the user {increaseModifier} more strength";
 		break;
 	
 		case "max_hp":
@@ -49,7 +49,7 @@ if(price!=0)
 		
 		case "range":
 			name = "Monarch's Monocle";
-			description = $"Increases attack range by {increaseModifier}%";
+			description = $"Increases attack range by {increaseModifier}";
 		break;		
 	}
 

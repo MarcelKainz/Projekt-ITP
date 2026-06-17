@@ -1,5 +1,5 @@
 event_inherited();
 
-global.debug = !global.debug;
+debug = !debug;
 
-DebugMode(global.debug);
+DebugMode(debug);

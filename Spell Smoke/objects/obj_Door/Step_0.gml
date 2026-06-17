@@ -17,7 +17,7 @@ else
 		EPress(true);
 		if (keyboard_check_pressed(ord("E")))
 		{
-			audio_play_sound(sou_Stairs, 1, false);
+			audio_play_sound(sou_NextRoom, 1, false);
 			if (fixedRoom != noone) {
 				room_goto(fixedRoom);
 				obj_Player.roomsPassed++;
