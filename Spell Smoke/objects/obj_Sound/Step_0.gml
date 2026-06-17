@@ -7,7 +7,15 @@ if (player_exists != player_was_alive) {
     if (player_exists) {
         current_music = audio_play_sound(sou_Theme, 10, true);
     } else {
-        current_music = audio_play_sound(sou_StartMenu, 10, true);
+		if(room == rm_DeathScreen){
+			current_music = audio_play_sound(sou_Lose, 10, false);
+		}
+		else if(room == rm_VictoryScreen){
+			current_music = audio_play_sound(Sou_Victory, 10, false);
+		}
+		else{
+			current_music = audio_play_sound(sou_StartMenu, 10, true);
+		}
     }
 
     player_was_alive = player_exists;
