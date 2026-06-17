@@ -9,8 +9,7 @@
   "managed":true,
   "name":"obj_Enemy_Boss",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"propertyId":{"name":"hp","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"propertyId":{"name":"damage","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ParentEnemy","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"propertyId":{"name":"hp","path":"objects/obj_ParentEnemy/obj_ParentEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"130",},
   ],
   "parent":{
     "name":"Enemies",
