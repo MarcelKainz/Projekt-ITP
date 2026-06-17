@@ -3,7 +3,7 @@ slider_height = 10;
 dragging = false;
 
 if (!variable_global_exists("music")) {
-    global.music = 1.0; 
+    global.music = 0.4; 
 }
 
 knob_x = global.music * slider_width;

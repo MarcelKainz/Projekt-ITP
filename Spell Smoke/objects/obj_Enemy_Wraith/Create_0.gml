@@ -12,7 +12,7 @@ itemPool = ["Heal", "Key"]
 #region Difficulty Scaling
 switch (player.difficulty) { //scale stats based on difficulty
 	case "easy" : break;
-	case "middle" : hp *= 1.5; break;
+	case "medium" : hp *= 1.5; break;
 	case "hard" : damage *= 2; hp *= 3; break;
 }
 if (player.endlessMode) //scale stats based on Room
@@ -28,6 +28,7 @@ function GetHit(atk) {
 	
 	audio_play_sound(sou_Hit, 1, false);
 	atk.Hit(true);
+	
 	
 	behaviour = Attack;//agro on hit
 	
@@ -51,6 +52,11 @@ function Attack() {
 	
 	var playerDistance = point_distance(x, y, player.x, player.y)
 	lineOfSight = collision_line(x, y, player.x, player.y, obj_ParentSolid, false, true);
+	
+	if (player.x > x)
+		image_xscale = -1;
+	if (player.x < x)
+		image_xscale = 1;
 	
 	var walk;
 	if (playerDistance > 200 || lineOfSight != noone)

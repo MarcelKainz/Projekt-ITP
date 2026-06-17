@@ -99,7 +99,8 @@ function AttackCircleBullet(angle) {
 #region Summoning
 function Summoning() { //temporarily invincible, summones a small number of random enemies in the room
 	if (cooldown % 150 == 0) {
-		instance_create_layer(max(random(480), 64), max(random(352), 64), "Instances", obj_Enemy_Random, {animate : true});
+		/*var spawn = */instance_create_layer(max(random(480), 64), max(random(352), 64), "Instances", obj_Enemy_Random, {animate : true});
+		//spawn.behaviour = Attack;
 	}
 	cooldown--;
 	if !(cooldown > 0) {

@@ -75,6 +75,8 @@ damageFlash = 0;
 damageMultiplier = 1;
 cooldown = 30; //current Cooldown
 cooldownTimer = 30;  //max Cooldown
+currentCooldownMax = cooldownTimer;
+holding = false;
 attackRange = 100;
 
 bones = 0;
@@ -101,5 +103,3 @@ function GetHit(damage, type) {
 debug = global.debug;
 
 window_set_cursor(cr_none);
-cursor_sprite = spr_Cursor;
-
