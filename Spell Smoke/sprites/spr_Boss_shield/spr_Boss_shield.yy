@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Boss_shield",
   "bboxMode":2,
-  "bbox_bottom":39,
-  "bbox_left":33,
-  "bbox_right":37,
+  "bbox_bottom":91,
+  "bbox_left":24,
+  "bbox_right":85,
   "bbox_top":35,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"8c7687bd-9c2d-4beb-8213-a92319084b58","name":"8c7687bd-9c2d-4beb-8213-a92319084b58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7069fa5d-b86d-4104-8122-88e7d6b4d2d4","name":"7069fa5d-b86d-4104-8122-88e7d6b4d2d4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":77,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a7815074-54ea-4949-b050-38c9839f2575","blendMode":0,"displayName":"default","isLocked":false,"name":"a7815074-54ea-4949-b050-38c9839f2575","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"998b8df6-f293-4b2b-9ebd-150a060b875b","blendMode":0,"displayName":"default","isLocked":false,"name":"998b8df6-f293-4b2b-9ebd-150a060b875b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Boss_shield",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8c7687bd-9c2d-4beb-8213-a92319084b58","path":"sprites/spr_Boss_shield/spr_Boss_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"12de0bec-832a-40b8-be02-e27350ecd82a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7069fa5d-b86d-4104-8122-88e7d6b4d2d4","path":"sprites/spr_Boss_shield/spr_Boss_shield.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"35164c09-b27e-44b0-a2ae-27f97300d726","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
